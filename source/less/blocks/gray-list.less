@@ -1,5 +1,9 @@
 .gray-list {
   background-color: rgb(242, 242, 242);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
 }
 
 .gray-list__li-bold {
@@ -24,4 +28,21 @@
   line-height: 1.71;
   letter-spacing: normal;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .gray-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gray-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: space-between;
+  }
 }
