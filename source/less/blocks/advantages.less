@@ -1,11 +1,27 @@
-.white-text {
-  color: rgb(40, 54, 69);
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
+.advantages {
+  padding-top: 80px;
+  // width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-white {
+  background-color: white;
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    padding-top: 20px;
+
+    //width: 585px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages-white {
+    background-color: white;
+    display: flex;
+    //width: 585px;
+  }
 }

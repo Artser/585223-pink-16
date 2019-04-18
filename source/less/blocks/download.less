@@ -1,11 +1,35 @@
 .download {
   background-color: rgb(29, 38, 49);
-  background-image: url(../img/bg-back-mobile.jpg);
+  background-image: url("../img/bg-back-mobile.jpg");
   height: 400px;
-
+  margin-bottom: 80px;
 }
 
 .download__head {
-padding-top: 50px;
-margin-bottom: -4px;
+  //padding-top: 50px;
+  margin-bottom: -4px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  //height: 237px;
+  padding-top: 287px;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    background-color: rgb(29, 38, 49);
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    height: 550px;
+    margin-bottom: 0px;
+  }
+
+  .download__head {
+    padding-top: 50px;
+    margin-bottom: -4px;
+    background-image: url(../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    //height: 545px;
+    //background-position: -10px bottom;
+    background-position: right 16px top 20px;
+    height: 500px;
+  }
 }
