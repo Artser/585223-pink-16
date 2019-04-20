@@ -5,3 +5,50 @@
 .hours__bold {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .hours {
+    display: flex;
+    margin-top: 55px;
+  }
+
+  .hours__bold {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+  }
+
+  .hours__bold__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 168px;
+    margin-bottom: 0;
+  }
+
+  .hours__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #283645;
+    width: 295px;
+  }
+
+  .hours__link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d22856;
+  }
+}

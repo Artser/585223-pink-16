@@ -13,7 +13,11 @@
 <body>
   <header class="page-header page-header__close">
     <a class="page-header__logo">
-      <img src="./img/logo-pink-white-mobile.svg" width="72" height="25" alt="">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+      </picture>
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -109,10 +113,13 @@
       </div>
     </section>
     <section class="hours">
-      <p class="hours__bold">Эффект на 24 часа!</p>
-      <p class="hours__text">Британские ученые провели исследования и доказали,что положительный эффект от использования
-        приложения длится целые сутки!</p>
-      <a class="hours__link" href="http://">Узнать больше об исследовании</a>
+      <img src="./img/icon-timer.svg" width="242" height="279" alt="">
+      <div class="hours__bold">
+        <h3 class="hours__bold__text">Эффект на 24 часа!</h3>
+        <p class="hours__text">Британские ученые провели исследования и доказали,что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="hours__link" href="#">Узнать больше об исследовании</a>
+      </div>
     </section>
   </main>
 </body>
