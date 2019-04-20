@@ -3,8 +3,12 @@
   margin: 0;
   background-color: rgb(242, 242, 242);
   background-repeat: no-repeat;
-  background-image: url("/source/img/triangle-white.svg");
+  background-image: url("../img/triangle-white.svg");
   background-position: left top;
+}
+
+.advantages-gray__img {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,4 +17,8 @@
     padding-top: 75px;
     display: flex;
   }
+  .advantages-gray__img {
+    display: block;
+  }
+
 }
