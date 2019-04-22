@@ -4,7 +4,9 @@
   background-color: rgb(242, 242, 242);
   background-repeat: no-repeat;
   background-image: url("../img/triangle-white.svg");
-  background-position: left top;
+  background-position: left -36px;
+  margin-top: -18px;
+  background-size: 143%;
 }
 
 .advantages-gray__img {
@@ -16,9 +18,28 @@
     //width: 660px;
     padding-top: 75px;
     display: flex;
+    background-position: left -66px;
+    background-size: 100%;
+    margin-top: -18px;
   }
 
   .advantages-gray__img {
     display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-gray__img {
+    display: none;
+  }
+
+  .advantages-gray {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+    background-repeat: no-repeat;
+    background-image: url("../img/triangle-white.svg");
+    background-position: left -66px;
+    background-size: 100%;
   }
 }
