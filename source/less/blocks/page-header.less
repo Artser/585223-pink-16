@@ -1,7 +1,7 @@
 .page-header {
-  background-color: rgb(41, 54, 70);
+  background-color: rgb(40, 54, 69);
   background-image: url("../img/icon-no.svg");
-  background-position: right 40px top 30px;
+  background-position: right 12px top 30px;
   background-repeat: no-repeat;
 }
 
@@ -20,7 +20,9 @@
 
 .page-header__logo {
   height: 25px;
-  padding: 20px;
+  padding-left: 14px;
+  padding-top: 32px;
+  padding-bottom: 23px;
   display: block;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -35,10 +37,18 @@
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    height: 110px;
+    width: 118px;
+    padding-left: 105px;
+    padding-top: 26px;
+    padding-bottom: 23px;
   }
 
   .page-header {
+    //display: flex;
+    //height: 93px;
+    //background-color: rgb(17, 17, 17, 0.3);
     display: flex;
+    height: 26px;
+    background-color: #111111;
   }
 }
