@@ -1,10 +1,22 @@
 .page-header {
   background-color: rgb(40, 54, 69);
-  background-image: url("../img/icon-no.svg");
-  background-position: right 25px top 30px;
+  //
+  //background-position: right 25px top 30px;
   background-repeat: no-repeat;
 }
 
+.page-header__close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-no.svg");
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #283645;
+  outline: none;
+  border: none;
+}
 
 .site-list__item--active {
   font-family: "Open Sans", sans-serif;
@@ -20,9 +32,8 @@
 
 .page-header__logo {
   height: 25px;
-  //padding-left: 14px;
-  padding-top: 32px;
-  padding-bottom: 23px;
+  padding-top: 23px;
+  padding-bottom: 21px;
   display: block;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -41,18 +52,20 @@
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    width: 118px;
+    width: 147px;
     padding-bottom: 23px;
-    padding-left: 96px;
-    padding-top: 19px;
+    padding-left: 0;
+    padding-top: 26px;
   }
 
   .page-header {
-    //display: flex;
-    //height: 93px;
-    //background-color: rgb(17, 17, 17, 0.3);
-    display: flex;
-    height: 26px;
-    background-color: #111111;
+
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(10, 11, 11, 30%);
+  }
+  .page-header__close {
+    display: none;
   }
 }

@@ -11,31 +11,34 @@
 </head>
 
 <body>
-  <header class="page-header page-header__close">
-    <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
-      </picture>
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Конкурсы</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>HTML academy</a>
-          </li>
-        </ul>
+  <header class="page-header">
+    <div class="main-nav__wrapper">
+      <div class="d-desktop-flex">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+          </picture>
+        </a>
+        <button class="page-header__close"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>HTML academy</a>
+            </li>
+          </ul>
       </div>
+    </div>
     </nav>
   </header>
   <main class="page-main">
@@ -43,32 +46,34 @@
     <section class="download">
       <div class="download__head">
         <div class="application">
-          <p class="application__title">Взгляните на жизнь иначе!</p>
-          <button class="btn-download">Скачать приложение</button>
-          <ul class="application__in-touch">
-            <li class="application__apple">
-              <img src="./img/logo-apple.svg" width="47" height="56" alt="">
-              <a class="downloads__app  downloads__app--apple" href="https://itunes.apple.com" target="_blank"
-                title="Скачать для iPhone и iPad">
-                <span class="visually-hidden">Apple</span>
-              </a>
-            </li>
-            <li class="application__android">
-              <img src="./img/logo-android.svg" width="47" height="56" alt="">
-              <a class="downloads__app  downloads__app--android" href="https://play.google.com" target="_blank"
-                title="Скачать для Android">
-                <span class="visually-hidden">Android</span>
-              </a>
-            </li>
-            <li class="application__windows">
-              <img src="./img/logo-microsoft.svg" width="47" height="56" alt="">
-              <a class="downloads__app  downloads__app--windows" href="https://www.microsoft.com/store/" target="_blank"
-                title="Скачать для Windows Phone">
-                <span class="visually-hidden">Windows</span>
-              </a>
-            </li>
-          </ul>
-          <p class="application-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="download--container">
+            <p class="application__title">Взгляните на жизнь иначе!</p>
+            <button class="btn-download">Скачать приложение</button>
+            <ul class="application__in-touch">
+              <li class="application__apple">
+                <img src="./img/logo-apple.svg" width="47" height="56" alt="">
+                <a class="downloads__app  downloads__app--apple" href="https://itunes.apple.com" target="_blank"
+                  title="Скачать для iPhone и iPad">
+                  <span class="visually-hidden">Apple</span>
+                </a>
+              </li>
+              <li class="application__android">
+                <img src="./img/logo-android.svg" width="47" height="56" alt="">
+                <a class="downloads__app  downloads__app--android" href="https://play.google.com" target="_blank"
+                  title="Скачать для Android">
+                  <span class="visually-hidden">Android</span>
+                </a>
+              </li>
+              <li class="application__windows">
+                <img src="./img/logo-microsoft.svg" width="47" height="56" alt="">
+                <a class="downloads__app  downloads__app--windows" href="https://www.microsoft.com/store/"
+                  target="_blank" title="Скачать для Windows Phone">
+                  <span class="visually-hidden">Windows</span>
+                </a>
+              </li>
+            </ul>
+            <p class="application-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </div>
     </section>

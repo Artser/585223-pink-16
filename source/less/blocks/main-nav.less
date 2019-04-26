@@ -4,6 +4,20 @@
   list-style: none;
 }
 
+.main-nav__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-nav__list {
     display: flex;
@@ -19,4 +33,16 @@
     margin-right: 96px;
     padding-top: 27px;
   }
+
+  .main-nav__wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-left: auto;
+  }
 }
+
