@@ -40,7 +40,23 @@
 
 .gray-list--friends {
   padding-top: 1px;
-  padding-bottom: 23px;
+  padding-bottom: 3px;
+}
+
+.gray-list__li-text--friends {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #283645;
+  font-family: "Open Sans", sans-serif;
+  margin-left: -41px;
+  margin-top: 10px;
+  width: 264px;
+  padding-left: 18px;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,6 +65,7 @@
     width: 300px;
     flex-direction: column;
     padding-right: 10px;
+    padding-left: 31px;
   }
 
   .gray-list__li::before {
@@ -61,8 +78,39 @@
   }
 
   .gray-list__li-text {
-    display: flex;
+    //display: flex;
+
+    width: 287px;
+    text-align: left;
+    padding-left: 52px;
+  }
+
+  .gray-list__li-bold {
+    justify-content: center;
+  }
+
+  .gray-list__li-bold--friends {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    padding-left: 8px;
+    color: #283645;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: -3px;
+  }
+
+  .gray-list--world {
+    padding-bottom: 9px;
+  }
+
+  .gray-list__li-text--friends {
     width: 300px;
+    text-align: left;
+    padding-left: 52px;
   }
 }
 
@@ -74,7 +122,7 @@
     //padding-right: 10px;
     position: relative;
     padding: 351px 4px 57px;
-    margin-right: 10px;
+    margin-right: 1px;
     margin-bottom: 0;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
@@ -96,11 +144,13 @@
 
   .gray-list__li-text {
     //display: flex;
-    width: 300px;
+    width: 233px;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     line-height: 1.67;
-    //flex-wrap: wrap;
+    text-align: center;
+    padding-left: 69px;
+    padding-right: 46px;
   }
 
   .gray-list__li-bold {
@@ -113,6 +163,8 @@
     letter-spacing: normal;
     text-align: center;
     color: #283645;
+    margin-top: 4px;
+    margin-bottom: 23px;
   }
 
   .gray-list--world::before {
@@ -125,5 +177,18 @@
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .gray-list__li-bold--friends {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #283645;
+    width: 300px;
   }
 }

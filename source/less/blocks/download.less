@@ -22,6 +22,29 @@
   margin-left: -6px;
 }
 
+.download__btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  padding-right: 20px;
+  background-color: #293646;
+  margin-top: 27px;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 25px;
+  margin-left: 2px;
+  width: 280px;
+  margin-bottom: 18px;
+  padding-top: 15px;
+}
+
 @media (min-width: @tablet-width) {
   .download {
     background-color: rgb(29, 38, 49);
@@ -34,8 +57,6 @@
 
   .download--container {
     max-width: 620px;
-    margin: 0 auto;
-    position: relative;
   }
 
   .download__head {
@@ -49,21 +70,28 @@
     margin-top: -53px;
     margin-right: -34px;
   }
+
+  .download__btn {
+    background: transparent;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-left: -14px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .download__head {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: -34% 230%;
+    background-position: calc (50% + 70px) 100%;
     height: auto;
     //background-size: auto 514px;
   }
 
   .download--container {
     max-width: 940px;
-    margin: 0 auto;
-    position: relative;
   }
 
   .download {
@@ -75,5 +103,28 @@
     background-position: top center;
     background-repeat: no-repeat;
     padding-bottom: 123px;
+  }
+
+  .download__btn {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    width: 296px;
+    margin-bottom: 52px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 1px;
+    padding-right: 0;
+    background-color: transparent;
+    margin-top: 56px;
+    border: 2px solid rgba(255, 255, 255);
+    border-radius: 25px;
+    margin-left: -10px;
   }
 }

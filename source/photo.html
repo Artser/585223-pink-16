@@ -13,30 +13,33 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-        <picture>
+    <div class="main-nav__wrapper">
+      <div class="d-desktop-flex">
+        <a class="page-header__logo">
+          <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
           </picture>
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Конкурсы</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>HTML academy</a>
-          </li>
-        </ul>
+        </a>
+        <button class="page-header__close"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>HTML academy</a>
+            </li>
+          </ul>
       </div>
+    </div>
     </nav>
   </header>
   <section class="wrapper-user">
