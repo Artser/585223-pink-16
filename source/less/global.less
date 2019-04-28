@@ -36,6 +36,22 @@ a:hover {
   overflow: hidden;
 }
 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background-size: 660px auto;
+  }
+
+  .container {
+    max-width: 640px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   body {
     background-size: 960px auto;
@@ -44,10 +60,8 @@ a:hover {
   .d-desktop-flex {
     display: flex;
   }
-}
 
-@media (min-width: @tablet-width) {
-  body {
-    background-size: 660px auto;
+  .container {
+    max-width: 940px;
   }
 }
