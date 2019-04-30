@@ -7,6 +7,10 @@
   margin-top: -10px;
 }
 
+.gray-list__img {
+  display: none;
+}
+
 .gray-list__li-bold {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -64,9 +68,14 @@
   .gray-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
-    padding-top: 61px;
-    padding-left: 17px;
+    padding-top: 18px;
+    padding-left: 0;
+  }
+
+  .gray-list__img {
+    padding-bottom: 54px;
+    display: flex;
   }
 }

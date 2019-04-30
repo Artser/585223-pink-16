@@ -86,3 +86,60 @@
     top: 76px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .hours-timer {
+    width: 100%;
+    height: auto;
+  }
+
+  .hours__picture-wrapper {
+    width: 300px;
+    padding-left: 0;
+  }
+
+  .hours__picture-wrapper::before {
+    width: 254px;
+    height: 254px;
+    background-size: cover;
+    top: 70px;
+    left: 22px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .hours {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  .hours__picture-wrapper::after {
+    font-size: 117px;
+    left: 0;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hours__text {
+    width: 496px;
+    padding-top: 6px;
+    padding-left: 8px;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .hours__bold__text {
+    font-size: 30px;
+    font-weight: bold;
+    width: 308px;
+    margin-bottom: -4px;
+    padding-top: 65px;
+    padding-left: 5px;
+  }
+
+  .hours__link {
+    font-size: 19px;
+    text-decoration: underline;
+  }
+}
