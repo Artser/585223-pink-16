@@ -1,17 +1,17 @@
-.main-wrapper {
+.wrapper {
   padding: 0;
   list-style: none;
   display: block;
   margin: 0 -10px;
 }
 
-.main-wrapper__container {
+.wrapper__container {
   padding: 0;
   margin-left: -21px;
 }
 
 @media (min-width: @tablet-width) {
-  .main-wrapper__container {
+  .wrapper__container {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
@@ -19,10 +19,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-wrapper {
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
     //width: 1200px;
     margin: 0 -10px;
+  }
+
+  .wrapper__container {
+    margin: 0 -20px;
   }
 }
