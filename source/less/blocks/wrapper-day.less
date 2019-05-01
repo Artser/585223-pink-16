@@ -1,16 +1,12 @@
 .wrapper-day {
   display: block;
   position: relative;
-  //max-width: 1200px;
-  //background-color: rgb(242, 242, 242);
-  margin-bottom: 20px;
-  //margin-right: 20px;
 }
 
 .wrapper-day__panorama {
   position: absolute;
   top: 0;
-  right: 30px;
+  right: 21px;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
@@ -25,11 +21,9 @@
   margin-left: 20px;
   margin-right: 20px;
   background-color: rgb(242, 242, 242);
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-top: -4px;
 }
 
 .wrapper-day__img {
@@ -37,8 +31,26 @@
 }
 
 @media (min-width: @tablet-width) {
-  .wrapper-guest__name--day {
-    order: 1;
+  .wrapper-day__img {
+    width: 106%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .wrapper-day__panorama {
+    top: 56px;
+  }
+
+  .wrapper-day__first {
+    width: 620px;
+    margin-top: -4px;
+    padding-top: 0;
+    display: flex;
+  }
+
+  .wrapper-day {
+    margin-bottom: 50px;
   }
 }
 

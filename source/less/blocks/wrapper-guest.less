@@ -1,13 +1,21 @@
 .wrapper-guest {
-  margin: 0;
-  padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: rgb(242, 242, 242);
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   width: 280px;
+  padding: 0 20px;
+  height: 100%;
+  margin-top: 20px;
+
+
+  &__background {
+    background-color: rgb(242, 242, 242);
+    height: 100%;
+  }
+}
+
+.wrapper-guest__like {
+  padding-left: 20px;
+  padding-bottom: 19px;
 }
 
 .wrapper-guest__name {
@@ -21,7 +29,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #283645;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 2px;
   padding-left: 20px;
 }
@@ -47,12 +55,32 @@
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: left;
   color: #283645;
   margin-top: 0;
   padding-left: 20px;
+  margin-bottom: 11px;
+}
+
+.wrapper-guest__name--day {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 18px;
+  margin-bottom: 0;
+  line-height: 1.7;
+  margin-top: 11px;
+}
+
+.wrapper-guest__comments--day {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 0;
+  margin-top: 0;
+  padding-left: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,32 +88,59 @@
     display: flex;
     //width: 300px;
     flex-wrap: wrap;
-    margin-right: 10px;
+    margin: 0 0 20px;
+  }
+
+  .wrapper-guest__name--day {
+    order: 1;
+    padding-top: 0;
+    margin-top: -43px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 12px;
+    padding-bottom: 5px;
+  }
+
+  .wrapper-guest__name {
+    padding-top: 8px;
+    padding-left: 27px;
   }
 
   .wrapper-guest__comments {
     display: flex;
-    width: 300px;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-bottom: 12px;
+    width: 262px;
+    padding-left: 28px;
+  }
+
+  .wrapper-guest__like {
+    padding-left: 20px;
+    padding-bottom: 19px;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-top: 23px;
   }
 
   .wrapper-guest__comments--day {
     order: 3;
+    margin-top: -17px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    padding-top: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .wrapper-guest {
-    margin: 0;
-    padding: 0;
-    margin-left: 11px;
-    margin-right: 0;
     //background-color: #f2f2f2;
     margin-bottom: 20px;
     display: flex;
-    padding-right: 22px;
-    padding-left: 0;
   }
 
   .wrapper-guest__comments {

@@ -1,27 +1,20 @@
 .main-wrapper {
   padding: 0;
-  margin: 0;
   list-style: none;
   display: block;
+  margin: 0 -10px;
 }
 
 .main-wrapper__container {
-  max-width: 280px;
-  margin: 0 auto;
+  padding: 0;
+  margin-left: -21px;
 }
 
 @media (min-width: @tablet-width) {
-  .main-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    //width: 660px;
-  }
-
   .main-wrapper__container {
-    max-width: 620px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -37px;
+    margin: 0 -10px;
   }
 }
 
@@ -31,14 +24,5 @@
     flex-wrap: wrap;
     //width: 1200px;
     margin: 0 -10px;
-  }
-
-  .main-wrapper__container {
-    max-width: 940px;
-    display: flex;
-    flex-wrap: wrap;
-    /* margin-left: -24px; */
-    margin: 0 auto;
-    margin-left: -42px;
   }
 }
