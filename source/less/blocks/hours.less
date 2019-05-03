@@ -9,13 +9,13 @@
 @media (min-width: @tablet-width) {
   .hours {
     display: flex;
-    margin-top: 55px;
+    margin-top: 30px;
   }
 
   .hours__bold {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
+    padding-left: 66px;
   }
 
   .hours__bold-text {
@@ -33,33 +33,39 @@
   }
 
   .hours__text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+
+    font-size: 15px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
+    line-height: 1.6;
+    letter-spacing: -0.2px;
     text-align: left;
     color: #283645;
-    width: 295px;
+    width: 300px;
+    margin-bottom: 13px;
   }
 
   .hours__link {
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.71;
-    letter-spacing: normal;
     text-align: left;
+    color: #d22856;
+    margin: 0;
+    text-decoration: underline;
+    letter-spacing: 0.3px;
+  }
+
+  .hours__link:visited {
     color: #d22856;
   }
 
   .hours__picture-wrapper {
     position: relative;
-    padding-left: 15px;
+    padding-left: 10px;
   }
 
   .hours__picture-wrapper::before {
@@ -69,8 +75,10 @@
     height: 204px;
     position: absolute;
     background-image: url("../img/icon-editor-diagram-fill.svg");
-    top: 55px;
-    left: 33px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 54px;
+    left: 29px;
   }
 
   .hours__picture-wrapper::after {
@@ -118,7 +126,7 @@
 
   .hours {
     display: flex;
-    margin-top: 45px;
+    margin-top: 37px;
   }
 
   .hours__picture-wrapper::after {
@@ -132,9 +140,10 @@
   .hours__text {
     width: 496px;
     padding-top: 6px;
-    padding-left: 8px;
+    padding-left: 1px;
+    line-height: 1.71;
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .hours__bold-text {
@@ -142,8 +151,8 @@
     font-weight: bold;
     width: 308px;
     margin-bottom: -4px;
-    padding-top: 65px;
-    padding-left: 5px;
+    padding-top: 61px;
+    padding-left: 3px;
   }
 
   .hours__link {
