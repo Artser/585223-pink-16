@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елизавета Арцер](https://up.htmlacademy.ru/adaptive/16/user/585223).
-* Наставник: [Александр Трасковский](https://htmlacademy.ru/profile/id454037).
+* Наставник: [Удовенко Марина](https://htmlacademy.ru/profile/id7570).
 
 ---
 
