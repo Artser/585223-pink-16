@@ -1,0 +1,56 @@
+.comments__commas {
+  display: none;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__name {
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.comments__about {
+  display: none;
+}
+
+.comments__text {
+  font-size: 14px;
+  font-weight: normal;
+  align-items: center;
+  text-align: center;
+  color: #283645;
+  line-height: 2.14;
+}
+
+@media (min-width: @tablet-width) {
+  .comments__text {
+    font-size: 18px;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    color: #283645;
+    order: 1;
+    padding-left: 4px;
+    line-height: 1.67;
+  }
+
+  .comments__about {
+    display: flex;
+    order: 3;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .comments__name {
+    order: 2;
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+}

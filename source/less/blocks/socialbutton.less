@@ -1,0 +1,39 @@
+.socialbutton {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .socialbutton__li {
+    list-style: none;
+    vertical-align: top;
+    width: 46px;
+    height: 46px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 50%;
+    margin: 12px 3px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialbutton {
+    margin-right: 94px;
+    margin-left: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .socialbutton {
+    margin-right: 212px;
+    margin-left: 138px;
+    margin-top: 10px;
+  }
+
+  .socialbutton__li {
+    margin: 12px 5px;
+  }
+}
