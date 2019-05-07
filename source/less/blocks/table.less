@@ -1,79 +1,97 @@
-.table {
-  background-color: #f2f2f2;
-}
+@media (min-width: @tablet-width) {
+  .table {
+    background-color: #f2f2f2;
+  }
 
-.wrapper-table {
-  border-collapse: collapse;
-  line-height: 1.1;
-  margin-top: 3px;
-  margin-bottom: 37px;
-}
+  .wrapper-table {
+    border-collapse: collapse;
+    line-height: 1.1;
+    margin-top: 3px;
+    margin-bottom: 61px;
+    margin-left: 10px;
+  }
 
-.table__tarifs {
-  padding: 10px;
-  border: 1px solid #e5e5e5;
-  background-color: #283645;
-  color: white;
-  text-transform: uppercase;
-}
+  .table__tarifs {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    background-color: #283645;
+    color: white;
+    text-transform: uppercase;
+  }
 
-.table__tarifs-cell {
-  border: 1px solid #e5e5e5;
-  background-color: white;
-  color: #283645;
-  font-size: 14px;
-  padding-left: 15px;
-  padding-top: 15px;
-  text-align: left;
-  padding-right: 60px;
-}
+  .table__tarifs-cell {
+    border: 1px solid #e5e5e5;
+    background-color: white;
+    color: #283645;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align: left;
+    width: 152px;
+    padding-right: 0;
+    font-weight: 300;
+  }
 
-.table__tarifs-row {
-  font-style: normal;
-}
+  .table__tarifs-row {
+    font-style: normal;
+  }
 
-.table__tarifs-name {
-  position: relative;
-}
+  .table__tarifs-name {
+    position: relative;
+  }
 
-.table__tarifs-hit {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 35px;
-  width: 64px;
-  background-image: url("../img/bg-hit.svg");
-  background-size: 64px 35px;
-}
+  .table__tarifs-hit {
+    top: 1px;
+    left: -10px;
+    height: 57px;
+    width: 71px;
+    background-image: url("../img/bg-hit.svg");
+    background-size: 85px 57px;
+    position: absolute;
+  }
 
-.table__tarifs-hit::before {
-  content: "ХИТ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 35px;
-  width: 64px;
-  color: white;
-  transform: rotate(-42deg);
-  font-size: 13px;
-}
+  .table__tarifs-hit::before {
+    content: "ХИТ";
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    height: 35px;
+    width: 64px;
+    color: white;
+    transform: rotate(-42deg);
+    font-size: 13px;
+  }
 
-.table__tarifs-name--corner {
-  background-color: transparent;
-  color: transparent;
-}
+  .table-tringle {
+    padding-top: 86px;
+    display: flex;
+    background-size: 100%;
+    margin: 25px 0 0;
+  }
 
-.table-tringle {
-  padding-top: 86px;
-  display: flex;
-  background-size: 100%;
-  margin: 25px 0 0;
-}
+  .table__tarifs-title {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    width: 124px;
+    padding-left: 16px;
+  }
 
-.table__tarifs-title {
-  padding-top: 20px;
-  padding-bottom: 8px;
-}
-.table__tarifs-cost{
-  padding-bottom: 15px;
+  .table__tarifs-cost {
+    padding-bottom: 15px;
+    width: 153px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .table__tarifs-name--corner {
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+  }
+
+  .table__tarifs-cell--caption {
+    // width: 160px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
 }
