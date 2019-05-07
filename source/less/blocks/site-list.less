@@ -29,6 +29,7 @@
     font-weight: normal;
     margin: 0 0 0 80px;
     padding: 0;
+    position: relative;
   }
 
   .site-list__photo {
@@ -40,5 +41,13 @@
     font-weight: normal;
     margin: 0 0 0 75px;
     padding: 0;
+  }
+
+  .site-list__item--active:after {
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    padding-top: 10px;
   }
 }
