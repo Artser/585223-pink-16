@@ -9,7 +9,6 @@
   margin-bottom: 37px;
 }
 
-
 .table__tarifs {
   padding: 10px;
   border: 1px solid #e5e5e5;
@@ -31,4 +30,35 @@
 
 .table__tarifs-row {
   font-style: normal;
+}
+
+.table__tarifs-name {
+  position: relative;
+}
+
+.table__tarifs-hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 64px;
+  background-image: url("../img/bg-hit.svg");
+  background-size: 64px 35px;
+}
+
+.table__tarifs-hit::before {
+  content: "ХИТ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 64px;
+  color: white;
+  transform: rotate(-42deg);
+  font-size: 13px;
+}
+
+.table__tarifs-name--corner {
+  background-color: transparent;
+  color: transparent;
 }
