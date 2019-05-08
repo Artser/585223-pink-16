@@ -121,7 +121,7 @@
     </section>
     <section>
       <div class="smole">
-        <img class="smole__img" src="img/iphone-screen-3-tablet@1x.png" width="160" height="267" alt="">
+        <img class="smole__img" src="img/iphone-screen-3-tablet@1x.png" width="160" height="275" alt="">
       </div>
     </section>
     <section class="hours">
@@ -146,12 +146,22 @@
         <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
+
     </div>
-    <div class="reviews-toggles">
-      <span class="reviews__toggle  reviews__toggle--active">1</span>
-      <span class="reviews__toggle">2</span>
-      <span class="reviews__toggle">3</span>
+    <div class="reviews-toggles d-flex">
+      <form class="reviews-toggles__form" action="form-button" method="GET">
+        <button class="reviews-toggles__button-active">
+          <span class="reviews__toggle  reviews__toggle--active">1</span>
+        </button>
+        <button class="reviews-toggles__button">
+          <span class="reviews__toggle">2</span>
+        </button>
+        <button class="reviews-toggles__button">
+          <span class="reviews__toggle">3</span>
+        </button>
+      </form>
     </div>
+
     <section class="table">
       <div class="table-tringle triangle-bg">
         <div class="container  d-flex">
@@ -179,62 +189,62 @@
               <tr class="table__tarifs-row">
                 <th class="table__tarifs-cell  table__tarifs-cell--caption">Розовый фильтр</th>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Розовый фильтр</span>
+                  <span class="table__tarifs-mobile">Розовый фильтр</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
 
                 </td>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Розовый фильтр</span>
+                  <span class="table__tarifs-mobile">Розовый фильтр</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
 
                 </td>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Розовый фильтр</span>
+                  <span class="table__tarifs-mobile">Розовый фильтр</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
 
                 </td>
               </tr>
               <tr class="table__tarifs-row">
                 <th class="table__tarifs-cell  table__tarifs-cell--caption">Смайлики</th>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Смайлики</span>
+                  <span class="table__tarifs-mobile">Смайлики</span>
                   <span class="table__tarifs__mark">-</span>
-                  <img src="./img/no-svg.svg" width="27" height="26" alt="">
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
 
                 </td>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Смайлики</span>
+                  <span class="table__tarifs-mobile">Смайлики</span>
                   <span class="table__tarifs__mark">+</span>
 
-                  <img class="table-img" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" class="table-img" src="./img/icon-yes.svg" width="31" height="21" alt="">
                 </td>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Смайлики</span>
+                  <span class="table__tarifs-mobile">Смайлики</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
                 </td>
               </tr>
               <tr class="table__tarifs-row">
                 <th class="table__tarifs-cell  table__tarifs-cell--caption">Комментарии</th>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Комментарии</span>
+                  <span class="table__tarifs-mobile">Комментарии</span>
                   <span class="table__tarifs__mark">-</span>
-                  <img src="./img/no-svg.svg" width="27" height="26" alt="">
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
 
                 </td>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Комментарии</span>
+                  <span class="table__tarifs-mobile">Комментарии</span>
                   <span class="table__tarifs__mark">-</span>
-                  <img src="./img/no-svg.svg" width="27" height="26" alt="">
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
 
                 </td>
                 <td class="table__tarifs-cell">
-                  <span class="table__tarifs__mark">Комментарии</span>
+                  <span class="table__tarifs-mobile">Комментарии</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
 
                 </td>
               </tr>
@@ -242,7 +252,22 @@
           </table>
         </div>
       </div>
+      <div class="reviews-toggles d-flex">
+        <form class="reviews-toggles__form" action="form-button" method="GET">
+          <button class="reviews-toggles__button-active">
+            <span class="reviews__toggle  reviews__toggle--active">1</span>
+          </button>
+          <button class="reviews-toggles__button">
+            <span class="reviews__toggle">2</span>
+          </button>
+          <button class="reviews-toggles__button">
+            <span class="reviews__toggle">3</span>
+          </button>
+        </form>
+      </div>
     </section>
+
+
     <section class="contacts   d-flex">
       <div class="container">
         <div class="contacts__lead">
