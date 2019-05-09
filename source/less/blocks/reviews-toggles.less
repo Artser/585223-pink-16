@@ -33,3 +33,19 @@
 .reviews__toggle {
   visibility: hidden;
 }
+
+.reviews-toggles__form {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews-toggles__form {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews-toggles {
+    display: none;
+  }
+}

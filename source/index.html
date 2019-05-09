@@ -81,7 +81,7 @@
         <div class="container">
           <ul class="white-list">
             <li class="white-list__li">
-              <p class="white-text">Устали от серости мегаполиса!!</p>
+              <p class="white-text">Устали от серости мегаполиса?</p>
             </li>
             <li class="white-list__li">
               <p class="white-text white-text__tablet">Нам есть, что вам предложить!</p>
@@ -163,22 +163,22 @@
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
       <div class="comments-second">
-          <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
-          <h3 class="comments__name">Николай Петров</h3>
-          <div class="comments__about">25 лет, водитель трамвая</div>
-          <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <div class="comments-third">
-            <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
-            <h3 class="comments__name">Николай Петров</h3>
-            <div class="comments__about">25 лет, водитель трамвая</div>
-            <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-              вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
+        <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
+        <h3 class="comments__name">Николай Петров</h3>
+        <div class="comments__about">25 лет, водитель трамвая</div>
+        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+      <div class="comments-third">
+        <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
+        <h3 class="comments__name">Николай Петров</h3>
+        <div class="comments__about">25 лет, водитель трамвая</div>
+        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
     </div>
     <div class="reviews-toggles d-flex">
-      <form class="reviews-toggles__form" action="form-button" method="GET">
+      <form action="form-button" method="GET">
         <button class="reviews-toggles__button-active">
           <span class="reviews__toggle  reviews__toggle--active">1</span>
         </button>
@@ -323,22 +323,25 @@
           </div>
         </div>
         <div class="contacts__map-wrap">
-          <div class="contacts__relative contacts__triangle">
+          <div class="container">
+            <div class="contacts__relative contacts__triangle">
+              <picture class="contacts__map">
+                <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+                <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+              </picture>
+              <svg class="map-marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px"
+                viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+                <circle fill="#FFFF2F" cx="17.991" cy="17.991" r="17.991" />
+                <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866" />
+              </svg>
 
-            <picture class="contacts__map">
-              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-              <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-            </picture>
-            <svg class="map-marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
-              <circle fill="#FFFF2F" cx="17.991" cy="17.991" r="17.991"/>
-              <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
-            </svg>
-
-            </a>
-            <iframe class="contacts__map-frame"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.215853219686!2d30.321586671047747!3d59.938930247265006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1482585841402"
-              width="1200" height="500" allowfullscreen></iframe>
+              </a>
+              <iframe class="contacts__map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.215853219686!2d30.321586671047747!3d59.938930247265006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1482585841402"
+                width="1200" height="500" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
 
