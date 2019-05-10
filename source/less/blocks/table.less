@@ -109,7 +109,7 @@
   padding-left: 27px;
 }
 
-.table-img {
+.table-icon {
   text-align: center;
 }
 
@@ -124,9 +124,10 @@
     border-collapse: collapse;
     line-height: 1.1;
     margin-top: 0;
-    margin-bottom: 61px;
+    margin-bottom: 68px;
     margin-left: 10px;
     max-width: 620px;
+    box-sizing: border-box;
   }
 
   .table__tarifs {
@@ -141,12 +142,12 @@
     background-color: white;
     color: #283645;
     font-size: 14px;
-    //padding-left: 15px;
-    padding-top: 15px;
-    //text-align: left;
-    width: 150px;
-    padding-right: 0;
     font-weight: 300;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-right: 0;
   }
 
   .table__tarifs-row {
@@ -159,6 +160,7 @@
     border: 2px solid #e5e5e5;
     background-color: #283645;
     border-left: 0;
+    padding-top: 21px;
   }
 
   .table__tarifs-hit {
@@ -184,25 +186,28 @@
   }
 
   .table-tringle {
-    padding-top: 86px;
+    padding-top: 85px;
     display: flex;
     background-size: 100%;
     margin: 13px 0 0;
   }
 
   .table__tarifs-title {
-    padding-top: 15px;
-    padding-bottom: 11px;
-    width: 124px;
-    padding-left: 19px;
-    font-size: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 151px;
+    padding-left: 0;
+    font-size: 16px;
+    text-align: center;
   }
 
   .table__tarifs-cost {
-    padding-bottom: 15px;
-    width: 153px;
+    padding-bottom: 14px;
+    font-size: 18px;
     font-weight: normal;
     text-align: center;
+    padding-top: 8px;
+    padding-left: 4px;
   }
 
   .table__tarifs-name--corner {
@@ -212,10 +217,10 @@
 
   .table__tarifs-cell--caption {
     // width: 160px;
-    padding-top: 11px;
+    padding-top: 14px;
     padding-bottom: 15px;
     text-align: left;
-    padding-right: 0;
+    padding-right: 28px;
     padding-left: 15px;
   }
 
@@ -226,8 +231,45 @@
   .table__tarifs-mobile {
     display: none;
   }
+}
 
-  .table-img {
-    text-align: center;
+@media (min-width: @desktop-width) {
+  .table-tringle {
+    margin: 7px 0 0;
+    padding-top: 141px;
+  }
+
+  .table__tarifs-title {
+    width: 233px;
+    font-size: 18px;
+  }
+
+  .wrapper-table {
+    border-collapse: collapse;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 95px;
+    margin-left: 10px;
+    max-width: 960px;
+  }
+
+  .table__tarifs-cell--caption {
+    padding-top: 20px;
+    padding-right: 69px;
+    padding-left: 11px;
+    padding-bottom: 19px;
+  }
+
+  .table__tarifs-name {
+    padding-top: 24px;
+  }
+
+  .table__tarifs-cost {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .table__tarifs-cell {
+    font-size: 18px;
   }
 }
