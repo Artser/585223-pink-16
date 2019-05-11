@@ -9,7 +9,7 @@
   margin-top: 3px;
   margin-bottom: 30px;
   overflow: hidden;
-  margin-left: -382px;
+  margin-left: -377px;
 }
 
 .table__tarifs {
@@ -18,15 +18,25 @@
   text-transform: uppercase;
 }
 
+.table__tarifs-flex {
+  display: flex;
+  padding-left: 18px;
+  width: 233px;
+  padding-right: 14px;
+  align-items: center;
+  padding-bottom: 17px;
+  padding-top: 15px;
+}
+
 .table__tarifs-cell {
   border: 2px solid #e5e5e5;
   background-color: white;
   color: #283645;
   font-size: 14px;
-  padding-top: 20px;
+  //padding-top: 20px;
   font-weight: 300;
-  padding-bottom: 0;
-  padding-right: 11px;
+  //padding-bottom: 0;
+  //padding-right: 11px;
 }
 
 .table__tarifs-row {
@@ -73,7 +83,7 @@
 .table__tarifs-title {
   padding-top: 21px;
   padding-bottom: 11px;
-  width: 251px;
+  width: 244px;
   padding-left: 17px;
   font-size: 18px;
 }
@@ -106,13 +116,15 @@
 .table__tarifs-mobile {
   display: flex;
   text-transform: uppercase;
-  padding-left: 27px;
+  padding-left: 2px;
+  white-space: nowrap;
+  margin-right: auto;
 }
 
 .table-icon {
   text-align: center;
+  margin-right: -9px;
 }
-
 
 @media (min-width: @tablet-width) {
   .table {
@@ -120,9 +132,21 @@
     padding-bottom: 0;
   }
 
+  .table-icon {
+    margin-right: 0;
+  }
+
+  .table__tarifs-flex {
+    justify-content: center;
+    padding-left: 0;
+    width: auto;
+    padding-right: 0;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
   .wrapper-table {
-    border-collapse: collapse;
-    line-height: 1.1;
     margin-top: 0;
     margin-bottom: 68px;
     margin-left: 10px;

@@ -1,0 +1,43 @@
+.range-icon {
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  position: relative;
+}
+
+.range {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+}
+
+.range-corp::before {
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+}
+
+.range__img {
+  display: flex;
+  flex-direction: column;
+}
+
+.range-wrapper {
+  display: flex;
+  //flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .range__img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .range-wrapper {
+    flex-direction: column;
+  }
+}
