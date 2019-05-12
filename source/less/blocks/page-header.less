@@ -19,6 +19,32 @@
   visibility: hidden;
 }
 
+.page-header__pic--hover {
+  display: none;
+}
+
+.page-header__logo:hover {
+  .page-header__pic {
+    display: none;
+  }
+
+  .page-header__pic--hover {
+    display: block;
+  }
+}
+
+
+.page-header__logo:active {
+  .page-header__pic {
+    display: block;
+    opacity: 0.3;
+  }
+
+  .page-header__pic--hover {
+    display: none;
+  }
+}
+
 .site-list__item--active {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -41,9 +67,6 @@
   border-bottom-width: 1px;
 }
 
-.page-header__hover:hover {
-  background-image: url("../img/logo-pink-red-mobile.svg");
-}
 
 @media (min-width: @tablet-width) {
   .page-header__logo {

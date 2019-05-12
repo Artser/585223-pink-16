@@ -160,4 +160,31 @@
   .range-buttom {
     border-top: none;
   }
+
+  .range-radius::after {
+    display: none;
+  }
+
+  .range-corp::after {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #d32e5b;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    margin-right: 2px;
+    content: "";
+    top: 5px;
+    right: 76px;
+  }
+
+  .range-corp:focus::after {
+    background-color: #d32e5b;
+  }
+
+  .range-corp::after:active {
+    background-color: #d32e5b;
+  }
 }
