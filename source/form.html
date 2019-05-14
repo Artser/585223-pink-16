@@ -16,10 +16,15 @@
     <div class="main-nav__wrapper">
       <div class="d-desktop-flex">
         <a class="page-header__logo" href="index.html">
-          <picture>
+          <picture class="page-header__pic">
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+            <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+          </picture>
+          <picture class="page-header__pic--hover">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
+            <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
           </picture>
         </a>
         <button class="page-header__close"></button>
@@ -28,7 +33,7 @@
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item ">
               <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item site-list__item--active">
@@ -53,115 +58,190 @@
         </p>
       </div>
       <div class="contest__inner">
-        <form class="form" method="post" action="http://echo.htmlacademy.ru">
-          <div class="form__body">
-            <div class="form__fieldset  form__fieldset--fullname">
-              <h2 class="sr-only">Ваше полное имя</h2>
-              <div class="form__fieldset-inner">
-                <div class="form__text-fields  form__text-fields--fullname">
-                  <div class="form__field-text  form__field-text--fullname">
-                    <label class="form__text-label  form__text-label--fullname" for="user-last-name">Фамилия:</label>
-                    <input class="form__text-input  form__text-input--last-name" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
-                  </div>
-                  <div class="form__field-text  form__field-text--fullname">
-                    <label class="form__text-label  form__text-label--fullname" for="user-first-name">Имя:</label>
-                    <input class="form__text-input  form__text-input--first-name" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя *" required>
-                  </div>
-                  <div class="form__field-text  form__field-text--fullname">
-                    <label class="form__text-label  form__text-label--fullname" for="user-middle-name">Отчество:</label>
-                    <input class="form__text-input  form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form__fieldset  form__fieldset--achievements">
-              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
-              <div class="form__fieldset-inner">
-                <div class="form__checkbox-fields  form__checkbox-fields--achievements">
-                  <div class="form__checkbox-wrapper">
-                    <div class="form__field-checkbox">
-                      <input class="form__checkbox-input" type="checkbox" id="achivements[1]" name="Достижения" value="Сделал селфи с акулой" checked>
-                      <label class="form__checkbox-label" for="achivements[1]">Сделал селфи с акулой</label>
+          <form class="form" method="post" action="http://echo.htmlacademy.ru">
+            <div class="form__body">
+              <div class="form__fieldset  form__fieldset--fullname">
+                <h2 class="sr-only">Ваше полное имя</h2>
+                <div class="form__fieldset-inner">
+                  <div class="form__text-fields  form__text-fields--fullname">
+                    <div class="form__field-text  form__field-text--fullname">
+                      <label class="form__text-label  form__text-label--fullname" for="user-last-name">Фамилия:</label>
+                      <input class="form__text-input  form__text-input--last-name" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
                     </div>
-                    <div class="form__field-checkbox">
-                      <input class="form__checkbox-input" type="checkbox" id="achivements[2]" name="Достижения" value="Обгорел на пляже" checked>
-                      <label class="form__checkbox-label" for="achivements[2]">Обгорел на пляже</label>
+                    <div class="form__field-text  form__field-text--fullname">
+                      <label class="form__text-label  form__text-label--fullname" for="user-first-name">Имя:</label>
+                      <input class="form__text-input  form__text-input--first-name" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя *" required>
                     </div>
-                  </div>
-                  <div class="form__checkbox-wrapper">
-                    <div class="form__field-checkbox">
-                      <input class="form__checkbox-input" type="checkbox" id="achivements[3]" name="Достижения" value="Видел Чака Норриса">
-                      <label class="form__checkbox-label" for="achivements[3]">Видел Чака Норриса</label>
-                    </div>
-                    <div class="form__field-checkbox">
-                      <input class="form__checkbox-input" type="checkbox" id="achivements[4]" name="Достижения" value="Накупил сувениров">
-                      <label class="form__checkbox-label" for="achivements[4]">Накупил сувениров</label>
-                    </div>
-                  </div>
-                  <div class="form__checkbox-wrapper">
-                    <div class="form__field-checkbox">
-                      <input class="form__checkbox-input" type="checkbox" id="achivements[5]" name="Достижения" value="Удержал башню" checked>
-                      <label class="form__checkbox-label" for="achivements[5]">Удержал башню</label>
-                    </div>
-                    <div class="form__field-checkbox">
-                      <input class="form__checkbox-input" type="checkbox" id="achivements[6]" name="Достижения" value="Разгромил отель">
-                      <label class="form__checkbox-label" for="achivements[6]">Разгромил отель</label>
+                    <div class="form__field-text  form__field-text--fullname">
+                      <label class="form__text-label  form__text-label--fullname" for="user-middle-name">Отчество:</label>
+                      <input class="form__text-input  form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form__fieldset  form__fieldset--contacts">
-              <h2 class="form__title  form__title--contacts">Контактная информация</h2>
-              <div class="form__fieldset-inner">
-                <div class="form__text-fields  form__text-fields--contacts">
-                  <div class="form__field-text  form__field-text--contacts">
-                    <label class="form__text-label  form__text-label--contacts" for="user-phone">Номер телефона</label>
-                    <div class="form__input-wrapper  form__input-wrapper--contacts  form__input-wrapper--phone">
-                      <input class="form__text-input  form__text-input--contacts" id="user-phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
+              <div class="form__fieldset  form__fieldset--achievements">
+                <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+                <div class="form__fieldset-inner">
+                  <div class="form__checkbox-fields  form__checkbox-fields--achievements">
+                    <div class="form__checkbox-wrapper">
+                      <div class="form__field-checkbox">
+                        <input class="form__checkbox-input" type="checkbox" id="achivements[1]" name="Достижения" value="Сделал селфи с акулой" checked>
+                        <label class="form__checkbox-label" for="achivements[1]">Сделал селфи с акулой</label>
+                      </div>
+                      <div class="form__field-checkbox">
+                        <input class="form__checkbox-input" type="checkbox" id="achivements[2]" name="Достижения" value="Обгорел на пляже" checked>
+                        <label class="form__checkbox-label" for="achivements[2]">Обгорел на пляже</label>
+                      </div>
+                    </div>
+                    <div class="form__checkbox-wrapper">
+                      <div class="form__field-checkbox">
+                        <input class="form__checkbox-input" type="checkbox" id="achivements[3]" name="Достижения" value="Видел Чака Норриса">
+                        <label class="form__checkbox-label" for="achivements[3]">Видел Чака Норриса</label>
+                      </div>
+                      <div class="form__field-checkbox">
+                        <input class="form__checkbox-input" type="checkbox" id="achivements[4]" name="Достижения" value="Накупил сувениров">
+                        <label class="form__checkbox-label" for="achivements[4]">Накупил сувениров</label>
+                      </div>
+                    </div>
+                    <div class="form__checkbox-wrapper">
+                      <div class="form__field-checkbox">
+                        <input class="form__checkbox-input" type="checkbox" id="achivements[5]" name="Достижения" value="Удержал башню" checked>
+                        <label class="form__checkbox-label" for="achivements[5]">Удержал башню</label>
+                      </div>
+                      <div class="form__field-checkbox">
+                        <input class="form__checkbox-input" type="checkbox" id="achivements[6]" name="Достижения" value="Разгромил отель">
+                        <label class="form__checkbox-label" for="achivements[6]">Разгромил отель</label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form__field-text  form__field-text--contacts">
-                    <label class="form__text-label  form__text-label--contacts" for="user-email">Aдрес почты</label>
-                    <div class="form__input-wrapper  form__input-wrapper--contacts  form__input-wrapper--email">
-                      <input class="form__text-input  form__text-input--contacts" id="user-email" type="email" name="E-mail" placeholder="Введите почту *" required>
+                </div>
+              </div>
+              <div class="form__fieldset  form__fieldset--contacts">
+                <h2 class="form__title  form__title--contacts">Контактная информация</h2>
+                <div class="form__fieldset-inner">
+                  <div class="form__text-fields  form__text-fields--contacts">
+                    <div class="form__field-text  form__field-text--contacts">
+                      <label class="form__text-label  form__text-label--contacts" for="user-phone">Номер телефона</label>
+                      <div class="form__input-wrapper  form__input-wrapper--contacts  form__input-wrapper--phone">
+                        <input class="form__text-input  form__text-input--contacts" id="user-phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
+                      </div>
+                    </div>
+                    <div class="form__field-text  form__field-text--contacts">
+                      <label class="form__text-label  form__text-label--contacts" for="user-email">Aдрес почты</label>
+                      <div class="form__input-wrapper  form__input-wrapper--contacts  form__input-wrapper--email">
+                        <input class="form__text-input  form__text-input--contacts" id="user-email" type="email" name="E-mail" placeholder="Введите почту *" required>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form__fieldset  form__fieldset--apps">
-              <h2 class="form__title  form__title--apps">С каким приложением путешествовали?</h2>
-              <div class="form__fieldset-inner">
-                <div class="form__radio-fields  form__radio-fields--apps">
-                  <div class="form__field-radio">
-                    <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
-                    <label class="form__radio-label" for="ios">Pink для iOS</label>
+              <div class="form__fieldset  form__fieldset--apps">
+                <h2 class="form__title  form__title--apps">С каким приложением путешествовали?</h2>
+                <div class="form__fieldset-inner">
+                  <div class="form__radio-fields  form__radio-fields--apps">
+                    <div class="form__field-radio">
+                      <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
+                      <label class="form__radio-label" for="ios">Pink для iOS</label>
+                    </div>
+                    <div class="form__field-radio">
+                      <input class="form__radio-input" type="radio" id="android" name="Приложение" value="Pink на Android">
+                      <label class="form__radio-label" for="android">Pink на Android</label>
+                    </div>
+                    <div class="form__field-radio">
+                      <input class="form__radio-input" type="radio" id="windows-phone" name="Приложение" value="Windows Phone">
+                      <label class="form__radio-label" for="windows-phone">Windows Phone</label>
+                    </div>
                   </div>
-                  <div class="form__field-radio">
-                    <input class="form__radio-input" type="radio" id="android" name="Приложение" value="Pink на Android">
-                    <label class="form__radio-label" for="android">Pink на Android</label>
-                  </div>
-                  <div class="form__field-radio">
-                    <input class="form__radio-input" type="radio" id="windows-phone" name="Приложение" value="Windows Phone">
-                    <label class="form__radio-label" for="windows-phone">Windows Phone</label>
+                </div>
+              </div>
+              <div class="form__fieldset  form__fieldset--emotions">
+                <h2 class="form__title  form__title--emotions">Опишите свои эмоции</h2>
+                <div class="form__fieldset-inner">
+                  <div class="form__textarea-fields  form__textarea-fields--emotions">
+                    <textarea class="form__textarea  form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form__fieldset  form__fieldset--emotions">
-              <h2 class="form__title  form__title--emotions">Опишите свои эмоции</h2>
-              <div class="form__fieldset-inner">
-                <div class="form__textarea-fields  form__textarea-fields--emotions">
-                  <textarea class="form__textarea  form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer class="form__footer">
-            <button class="form__submit-btn  btn  btn--submit" type="submit">Отправить форму</button>
-            <div class="form__note"><span class="form__note-symbol">*</span> — обязательные <span class="form__note-purpose">для заполнения</span> поля</div>
-          </footer>
-        </form>
+            <footer class="form__footer">
+              <button class="form__submit-btn  btn  btn--submit" type="submit">Отправить форму</button>
+              <div class="form__note"><span class="form__note-symbol">*</span> — обязательные <span class="form__note-purpose">для заполнения</span> поля</div>
+            </footer>
+          </form>
+        </div>
       </div>
+    </main>
+    <footer class="main-footer">
+
+      <a class="main-footer__logo" href="index.html">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="">
+      </a>
+      <ul class="socialbutton">
+        <li class="socialbutton__li">
+          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
+              viewBox="0 0 17 15">
+              <path fill="#d22856"
+                d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socialbutton__li">
+          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Фейсбук</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#d22856" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
+          </a>
+        </li>
+        <li class="socialbutton__li">
+          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Youtube</span>
+            <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
+              viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <path fill="#d22856"
+                d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+            </svg>
+
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__by">Разработано</p>
+        <a class="copyright-active" href="https://htmlacademy.ru/intensive/htmlcss">
+          <svg class="copyright__logo" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
+            viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <title>HTML Academy</title>
+            <path fill="#d22856"
+              d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+          </svg>
+
+        </a>
+      </div>
+
+    </footer>
+    <div class="popup  popup--error" style="display:none">
+      <div class="popup__body  popup__body--error">
+        <div class="popup__title">Что-то пошло не&nbsp;так!</div>
+        <div class="popup__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </div>
+      </div>
+      <footer class="popup__footer  popup__footer--error">
+        <button class="popup__btn  btn  btn--popup" type="button">ок</button>
+      </footer>
     </div>
+    <div class="popup  popup--success" style="display:none">
+      <div class="popup__body  popup__body--success">
+        <div class="popup__title">Ваша заявка отправлена</div>
+        <div class="popup__text">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам.
+          В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
+        </div>
+      </div>
+      <footer class="popup__footer  popup__footer--success">
+        <button class="popup__btn  btn  btn--popup" type="button">Закрыть окно</button>
+      </footer>
+    </div>
+
+  </body>
+</html>

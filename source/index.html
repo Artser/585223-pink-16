@@ -20,9 +20,9 @@
             <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
           </picture>
           <picture class="page-header__pic--hover">
-              <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
-                <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
+            <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
           </picture>
         </a>
         <button class="page-header__close"></button>
@@ -199,10 +199,10 @@
     </div>
 
     <section class="table">
-      <div class="table-tringle triangle-bg">
-        <div class="container  d-flex">
+      <div class="table-triangle triangle-bg">
+        <div class="table-center d-flex">
           <table class="wrapper-table">
-            <thead class="table__tarifs__header">
+            <thead class="table__tarifs-header">
               <tr class="table__tarifs">
                 <th class="table__tarifs-name table__tarifs-name--corner"></th>
                 <th class="table__tarifs-name">
@@ -302,13 +302,14 @@
       </div>
       <div class="reviews-toggles d-flex">
         <form class="reviews-toggles__form" action="form-button" method="GET">
-          <button class="reviews-toggles__button-active">
-            <span class="reviews__toggle  reviews__toggle--active">1</span>
+
+          <button class="reviews-toggles__button-table">
+            <span class="reviews__toggle">1</span>
           </button>
-          <button class="reviews-toggles__button">
-            <span class="reviews__toggle">2</span>
+          <button class="reviews-toggles__button-active-table">
+            <span class="reviews__toggle  reviews__toggle--active">2</span>
           </button>
-          <button class="reviews-toggles__button">
+          <button class="reviews-toggles__button-table">
             <span class="reviews__toggle">3</span>
           </button>
         </form>
@@ -332,7 +333,8 @@
               </div>
               <div class="contacts__item  contacts__item--email">
                 <h3 class="contacts__item-lead">Пишите:</h3>
-                <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__item-info contacts__item-mail"
+                  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="contacts__item  contacts__item--address">
                 <h3 class="contacts__item-lead">Приезжайте в гости:</h3>
@@ -351,12 +353,13 @@
                 <circle fill="#FFFF2F" cx="17.991" cy="17.991" r="17.991" />
                 <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866" />
               </svg>
+
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557481803493!5m2!1sru!2sru"
-                width="600" height="450" style="border:0" allowfullscreen></iframe>
-
-
-
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1998.6641944361922!2d30.324345571719363!3d59.93771418082831!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557745727295!5m2!1sru!2sru"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6418464315861!2d30.321727751894297!3d59.93808498937816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557746490256!5m2!1sru!2sru"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -373,41 +376,32 @@
       <a class="main-footer__logo" href="index.html">
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="">
       </a>
-      <ul class="socialbutton">
-        <li class="socialbutton__li">
-          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Twitter</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
-              viewBox="0 0 17 15">
-              <path fill="#d22856"
-                d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-            </svg>
-          </a>
-        </li>
-        <li class="socialbutton__li">
-          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Фейсбук</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-              <path fill="#d22856" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
-          </a>
-        </li>
-        <li class="socialbutton__li">
-          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Youtube</span>
-            <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
-              viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-              <path fill="#d22856"
-                d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
-            </svg>
-
-          </a>
-        </li>
-      </ul>
+      <div class="socialbutton">
+        <a class="socialbutton__li socialbutton__icon" href="#"><span class="visually-hidden">Twitter</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
+            viewBox="0 0 17 15">
+            <path fill="#d22856"
+              d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+          </svg>
+        </a>
+        <a class="socialbutton__li socialbutton__icon" href="#"><span class="visually-hidden">Фейсбук</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+            <path fill="#d22856" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
+        </a>
+        <a class="socialbutton__li socialbutton__icon" href="#"><span class="visually-hidden">Youtube</span>
+          <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96"
+            enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <path fill="#d22856"
+              d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+          </svg>
+        </a>
+      </div>
       <div class="copyright">
         <p class="copyright__by">Разработано</p>
         <a class="copyright-active" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="copyright__logo" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
-            viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <title>HTML Academy</title>
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 41" width="115" height="41">
+                      <title>HTML Academy</title>
             <path fill="#d22856"
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
           </svg>
