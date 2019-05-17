@@ -11,30 +11,41 @@
   padding-right: 10px;
 }
 
-.copyright {
+.copyright__logo {
   display: flex;
   margin-top: 30px;
   justify-content: center;
   align-items: center;
+  fill: #d22856;
+}
+
+.copyright__logo:hover {
+  fill: #283645;
+}
+
+.copyright__logo:active {
+  fill: #bec2c7;
 }
 
 @media (min-width: @tablet-width) {
   .copyright {
     margin-right: 9px;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
   }
 
   .copyright__by {
     padding-right: 18px;
     margin-top: 0;
   }
+
+  .copyright-active {
+    margin-top: -36px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .copyright-active {
-    margin-top: 8px;
-  }
-
   .copyright {
     margin-top: 63px;
     margin-left: 13px;
@@ -43,5 +54,9 @@
   .copyright__by {
     padding-right: 12px;
     font-size: 19px;
+  }
+
+  .copyright-active {
+    margin-top: -25px;
   }
 }
