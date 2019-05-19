@@ -6,7 +6,7 @@
 .wrapper-day__panorama {
   position: absolute;
   top: 0;
-  right: 21px;
+  right: 25px;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
@@ -14,7 +14,6 @@
   background-color: #d22856;
   text-transform: uppercase;
   padding: 6px 20px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .wrapper-day__first {
@@ -27,16 +26,16 @@
 }
 
 .wrapper-day__img {
-  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  width: 320px;
 }
 
 @media (min-width: @tablet-width) {
   .wrapper-day__img {
-    width: auto;
-    max-width: inherit;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    min-height: 509px;
+    width: 100%;
   }
 
   .wrapper-day__panorama {

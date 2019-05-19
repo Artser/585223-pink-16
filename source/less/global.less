@@ -47,6 +47,16 @@ a:hover {
   display: flex;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 @media (min-width: @tablet-width) {
   body {
     background-size: 660px auto;

@@ -1,18 +1,20 @@
-.table {
+.table-wrapper {
   background-color: #f2f2f2;
-  padding-bottom: 36px;
+  //padding-bottom: 36px;
+  overflow: hidden;
 }
 
 .table-center {
   margin: 0 auto;
+  display: flex;
 }
 
-.wrapper-table {
+.table {
   border-collapse: collapse;
   line-height: 1.1;
   margin-top: 3px;
-  margin-bottom: 38px;
-  overflow: hidden;
+  //margin-bottom: 38px;
+
   margin-left: -377px;
 }
 
@@ -53,6 +55,7 @@
   border: 2px solid #e5e5e5;
   background-color: #283645;
   border-left: 0;
+  background-clip: padding-box;
 }
 
 .table__tarifs-hit {
@@ -81,7 +84,11 @@
   padding-top: 86px;
   display: flex;
   background-size: 100%;
-  margin: 34px 0 0;
+  margin: 0 0 0;
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.png");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .table__tarifs-title {
@@ -131,7 +138,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .table {
+  .table-wrapper {
     padding-bottom: 0;
   }
 
@@ -148,7 +155,7 @@
     padding-top: 0;
   }
 
-  .wrapper-table {
+  .table {
     margin-top: 0;
     margin-bottom: 68px;
     margin-left: 1px;
@@ -193,7 +200,7 @@
 
   .table-triangle {
     padding-top: 85px;
-    margin: 13px 0 0;
+    margin: 0;
   }
 
   .table__tarifs-title {
@@ -227,7 +234,7 @@
 
 @media (min-width: @desktop-width) {
   .table-triangle {
-    margin: 7px 0 0;
+    margin: 0;
     padding-top: 141px;
   }
 
@@ -236,7 +243,7 @@
     font-size: 18px;
   }
 
-  .wrapper-table {
+  .table {
     margin-top: 0;
     margin-bottom: 95px;
     margin-left: 10px;

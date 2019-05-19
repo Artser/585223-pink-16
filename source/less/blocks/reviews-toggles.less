@@ -1,9 +1,17 @@
 .reviews-toggles {
-  //margin-bottom: 50px;
   align-items: center;
   width: 60px;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 34px;
+  display: flex;
+}
+
+.reviews-toggles--background {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 38px;
+  padding-bottom: 39px;
 }
 
 .reviews-toggles__button-active {
@@ -28,6 +36,16 @@
   margin-left: 12px;
   border: none;
   color: inherit;
+}
+
+.reviews-toggles__button:hover {
+  color: #283645;
+  background: #283645;
+}
+
+.reviews-toggles__button:active {
+
+  background: #e9ebec;
 }
 
 .reviews__toggle {
@@ -61,6 +79,14 @@
 
 @media (min-width: @tablet-width) {
   .reviews-toggles__form {
+    display: none;
+  }
+
+  .reviews-toggles {
+    margin-bottom: 15px;
+  }
+
+  .reviews-toggles--background {
     display: none;
   }
 }
