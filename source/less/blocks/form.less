@@ -6,7 +6,7 @@
 .contest__inner {
   width: 320px;
   padding-left: 0;
-  padding-right: 20px;
+  //padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -93,6 +93,11 @@
   text-transform: uppercase;
   width: 251px;
   padding-left: 34px;
+  display: inline-block;
+}
+
+.form__title--mobile {
+  display: none;
 }
 
 .form__field-text {
@@ -202,8 +207,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 39px;
-  height: 39px;
+  width: 36px;
+  height: 36px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
@@ -480,10 +485,17 @@
     padding-top: 92px;
   }
 
+  .btn--submit {
+    padding: 16px 44px 16px;
+    letter-spacing: 0.45px;
+    text-align: center;
+  }
+
   .form__textarea--emotions {
     height: 159px;
-    width: 478px;
-    padding-top: 19px;
+    width: 474px;
+    padding-top: 14px;
+    margin-left: 0;
   }
 
   .contest__inner {
@@ -491,7 +503,7 @@
   }
 
   .contest__lead {
-    padding-left: 60px;
+    padding-left: 52px;
     padding-right: 60px;
     margin-bottom: 60px;
     font-size: 18px;
@@ -522,18 +534,20 @@
 
   .form__text-fields--fullname {
     width: 619px;
-    padding-left: 20px;
+    padding-left: 11px;
   }
 
   .form__fieldset--contacts {
     order: -1;
     padding-top: 0;
-    margin-left: 19px;
+    margin-left: 12px;
     width: 616px;
   }
 
   .form__fieldset--achievements {
     background-color: transparent;
+    width: 618px;
+    margin-left: 11px;
   }
 
   .form__title {
@@ -619,9 +633,8 @@
     margin-top: 0;
   }
 
-
   .form__checkbox-fields {
-    padding: 31px 77px 50px;
+    padding: 31px 58px 50px;
   }
 
   .form__checkbox-label {
@@ -629,14 +642,14 @@
   }
 
   .form__radio-fields {
-    padding: 34px 57px 52px;
+    padding: 34px 57px 54px;
   }
 
   .form__fieldset--apps {
     background-color: transparent;
     order: -2;
     width: 617px;
-    margin-left: 20px;
+    margin-left: 12px;
   }
 
   .form__radio-label {
@@ -644,8 +657,8 @@
   }
 
   .form__fieldset--emotions {
-    width: 616px;
-    margin-left: 19px;
+    width: 614px;
+    margin-left: 13px;
   }
 
   .form__footer {
@@ -656,11 +669,14 @@
 
   .form__submit-btn {
     width: 300px;
+    flex-shrink: 0;
+    margin-right: 139px;
+    margin-left: 12px;
   }
 
   .form__note {
-    margin-top: 0;
-    margin-left: auto;
+    margin-top: 4px;
+    margin-left: 0;
   }
 
   .form__textarea-fields {
@@ -704,14 +720,19 @@
 
 @media (min-width: @desktop-width) {
   .contest__inner {
-    width: 936px;
-    margin-left: -10px;
-    padding-left: 15px;
+    width: 941px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .contest {
+    margin-bottom: 29px;
   }
 
   .contest__lead {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 68px;
     width: 803px;
   }
@@ -735,13 +756,13 @@
   }
 
   .form__text-label--fullname {
-    margin-left: 6px;
-    margin-right: 21px;
+    margin-left: 2px;
+    margin-right: 18px;
     margin-top: 3px;
   }
 
   .form__text-fields--fullname {
-    width: 441px;
+    width: 438px;
     padding-left: 0;
   }
 
@@ -752,11 +773,12 @@
 
   .form__fieldset--contacts {
     width: 932px;
-    margin-left: 8px;
+    margin-left: 4px;
   }
 
   .form__fieldset--achievements {
     width: 100%;
+    margin-left: 1px;
   }
 
 
@@ -765,7 +787,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 19px;
+    padding-top: 23px;
     width: 817px;
   }
 
@@ -778,16 +800,6 @@
     padding-bottom: 13px;
   }
 
-  .form__checkbox-fields {
-    padding-top: 28px;
-    padding-bottom: 56px;
-  }
-
-  .form__checkbox-fields--achievements {
-    display: flex;
-    width: 100%;
-  }
-
   .form__checkbox-wrapper {
     flex-grow: 0;
   }
@@ -797,15 +809,14 @@
   }
 
   .form__radio-fields--apps {
-    padding: 30px 74px 52px;
-  }
-
-  .form__textarea-fields {
-    padding: 18px 58px 42px;
+    padding: 36px 67px 52px;
   }
 
   .form__textarea--emotions {
-    height: 128px;
+    height: 94px;
+    width: 796px;
+    padding-top: 16px;
+    margin-left: -2px;
   }
 
   .form__footer {
@@ -830,8 +841,59 @@
   }
 
   .form__fieldset--apps {
-    width: 420px;
+    width: 429px;
     margin-left: 0;
+  }
+
+  .form__field-radio:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .form__radio-label {
+    padding-left: 65px;
+  }
+
+  .form__text-input--contacts {
+    padding-left: 18px;
+  }
+
+  .form__checkbox-fields--achievements {
+    display: flex;
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 35px;
+  }
+
+  .form__checkbox-fields {
+    padding-top: 33px;
+    padding-bottom: 13px;
+  }
+
+  .form__fieldset--emotions {
+    width: 100%;
+    margin-left: 3px;
+  }
+
+  .form__textarea-fields {
+    padding: 24px 58px 42px;
+  }
+
+  .btn--submit {
+    padding: 17px 30px 16px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    padding-left: 31px;
+  }
+
+  .form__submit-btn {
+    flex-shrink: 0;
+    margin-right: 20px;
+    margin-left: 1px;
+  }
+
+  .form__note {
+    margin-left: auto;
   }
 }
 
