@@ -1,6 +1,5 @@
 .table-wrapper {
   background-color: #f2f2f2;
-  //padding-bottom: 36px;
   overflow: hidden;
 }
 
@@ -13,9 +12,7 @@
   border-collapse: collapse;
   line-height: 1.1;
   margin-top: 3px;
-  //margin-bottom: 38px;
-
-  margin-left: -377px;
+  margin-left: -540px;
 }
 
 .table__tarifs {
@@ -56,29 +53,33 @@
   background-color: #283645;
   border-left: 0;
   background-clip: padding-box;
-  width: 276px;
+  min-width: 276px;
+  box-sizing: border-box;
+
 }
 
 .table__tarifs-hit {
-  top: 2px;
-  left: -9px;
+  top: 0;
+  left: 0;
   height: 64px;
-  width: 89px;
+  width: 70px;
   background-image: url("../img/bg-hit.svg");
-  background-size: 89px 65px;
+  background-size: 71px 65px;
   position: absolute;
+  background-position: 0 0;
 }
 
 .table__tarifs-hit::before {
-  content: "ХИТ";
+  content: "Хит";
   position: absolute;
   top: 16px;
-  left: 8px;
+  left: -2px;
   height: 35px;
   width: 64px;
   color: white;
   transform: rotate(-42deg);
   font-size: 13px;
+  text-transform: uppercase;
 }
 
 .table-triangle {
@@ -113,7 +114,6 @@
 }
 
 .table__tarifs-cell--caption {
-  // width: 160px;
   padding-top: 11px;
   padding-bottom: 15px;
   text-align: left;
@@ -159,7 +159,7 @@
   .table {
     margin-top: 0;
     margin-bottom: 68px;
-    margin-left: 1px;
+    margin-left: 13px;
     max-width: 620px;
     box-sizing: border-box;
   }
@@ -196,6 +196,7 @@
 
   .table__tarifs-name {
     padding-top: 21px;
+    min-width: 152px;
   }
 
 
@@ -236,7 +237,7 @@
 @media (min-width: @desktop-width) {
   .table-triangle {
     margin: 0;
-    padding-top: 141px;
+    padding-top: 145px;
   }
 
   .table__tarifs-title {
@@ -248,12 +249,13 @@
     margin-top: 0;
     margin-bottom: 95px;
     max-width: 960px;
+    margin-left: 0;
   }
 
   .table__tarifs-cell--caption {
-    padding-top: 20px;
+    padding-top: 21px;
     padding-right: 69px;
-    padding-left: 11px;
+    padding-left: 22px;
     padding-bottom: 19px;
   }
 
