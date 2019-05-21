@@ -6,6 +6,9 @@
 .table-center {
   margin: 0 auto;
   display: flex;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .table {
@@ -24,7 +27,7 @@
 .table__tarifs-flex {
   display: flex;
   padding-left: 18px;
-  width: 233px;
+  //width: 233px;
   padding-right: 14px;
   align-items: center;
   padding-bottom: 17px;
@@ -53,9 +56,8 @@
   background-color: #283645;
   border-left: 0;
   background-clip: padding-box;
-  min-width: 276px;
+  min-width: 280px;
   box-sizing: border-box;
-
 }
 
 .table__tarifs-hit {
@@ -135,7 +137,7 @@
 
 .table-icon {
   text-align: center;
-  margin-right: -6px;
+  //margin-right: -6px;
 }
 
 @media (min-width: @tablet-width) {
@@ -156,10 +158,14 @@
     padding-top: 0;
   }
 
+  .table-center {
+    width: 660px;
+  }
+
   .table {
     margin-top: 0;
     margin-bottom: 68px;
-    margin-left: 13px;
+    margin-left: 21px;
     max-width: 620px;
     box-sizing: border-box;
   }
@@ -195,13 +201,13 @@
   }
 
   .table__tarifs-name {
-    padding-top: 21px;
+    padding-top: 19px;
     min-width: 152px;
   }
 
 
   .table-triangle {
-    padding-top: 85px;
+    padding-top: 92px;
     margin: 0;
   }
 
@@ -218,8 +224,8 @@
     padding-bottom: 14px;
     font-size: 18px;
     text-align: center;
-    padding-top: 8px;
-    padding-left: 4px;
+    padding-top: 6px;
+    padding-left: 2px;
   }
 
   .table__tarifs-cell--caption {
@@ -288,6 +294,6 @@
   }
 
   .table-center {
-    max-width: 940px;
+    width: 940px;
   }
 }
