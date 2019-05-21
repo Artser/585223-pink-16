@@ -6,6 +6,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
 a {
   text-decoration: none;
   color: white;
@@ -44,6 +45,16 @@ a:hover {
 
 .d-flex {
   display: flex;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 @media (min-width: @tablet-width) {

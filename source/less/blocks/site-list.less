@@ -19,6 +19,17 @@
   text-transform: uppercase;
 }
 
+.site-list__item a[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .site-list__item {
     border: none;
@@ -29,6 +40,7 @@
     font-weight: normal;
     margin: 0 0 0 80px;
     padding: 0;
+    position: relative;
   }
 
   .site-list__photo {
@@ -40,5 +52,19 @@
     font-weight: normal;
     margin: 0 0 0 75px;
     padding: 0;
+  }
+
+  .site-list__item--active::before {
+    //width: 100%;
+    height: 2px;
+    //color: white;
+    background-color: white;
+    //top: 0;
+    //left: 11px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    content: "";
   }
 }

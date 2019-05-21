@@ -14,10 +14,15 @@
     <div class="main-nav__wrapper">
       <div class="d-desktop-flex">
         <a class="page-header__logo">
-          <picture>
+          <picture class="page-header__pic">
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+          </picture>
+          <picture class="page-header__pic--hover">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
+            <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
           </picture>
         </a>
         <button class="page-header__close"></button>
@@ -26,19 +31,20 @@
             <li class="site-list__item site-list__item--active">
               <a href="#">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a>HTML Academy</a>
             </li>
           </ul>
+        </nav>
       </div>
     </div>
-    </nav>
+
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Приложение Pink</h1>
@@ -81,7 +87,7 @@
         <div class="container">
           <ul class="white-list">
             <li class="white-list__li">
-              <p class="white-text">Устали от серости мегаполиса!!</p>
+              <p class="white-text">Устали от серости мегаполиса?</p>
             </li>
             <li class="white-list__li">
               <p class="white-text white-text__tablet">Нам есть, что вам предложить!</p>
@@ -93,37 +99,52 @@
         <div class="advantages-gray triangle-bg">
           <div class="container">
             <div class="d-flex">
-              <img class="advantages-gray__img" src="img/iphone-screen-3-tablet@1x.png" width="268" height="485" alt="">
+              <picture>
+                <img class="advantages-gray__img"
+                  srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"
+                  src="./img/iphone-screen-3-tablet@1x.png" width="268" height="485" alt="Заводит новых друзей">
+              </picture>
               <ul class="gray-list">
                 <li class="gray-list__li gray-list--mood">
-                  <img class="gray-list__img" src="img/iphone-screen-1-desktop@1x.png" width="290" height="300" alt="">
+                  <picture>
+                    <img class="gray-list__img"
+                      srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"
+                      src="./img/iphone-screen-1-desktop@1x.png" alt="Поднимает настроение">
+                  </picture>
                   <h3 class="gray-list__li-bold">Поднимает настроение</h3>
                   <p class="gray-list__li-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
                     несколько кликов!</p>
                 </li>
                 <li class="gray-list__li gray-list--world">
-                  <img class="gray-list__img" src="img/iphone-screen-2-desktop@1x.png" width="290" height="300" alt="">
+                  <picture>
+                    <img class="gray-list__img"
+                      srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"
+                      src="./img/iphone-screen-2-desktop@1x.png" alt="Меняет мир вокруг">
+                  </picture>
                   <h3 class="gray-list__li-bold">Меняет мир вокруг</h3>
                   <p class="gray-list__li-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                    усилить
-                    эффект</p>
+                    усилить эффект</p>
                 </li>
                 <li class="gray-list__li gray-list--friends">
-                  <img class="gray-list__img" src="img/iphone-screen-3-desktop@1x.png" width="290" height="300" alt="">
+                  <picture>
+                    <img class="gray-list__img"
+                      srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"
+                      src="./img/iphone-screen-3-desktop@1x.png" alt="Заводит новых друзей">
+                  </picture>
                   <h3 class="gray-list__li-bold gray-list__li-bold--friends">Заводит новых друзей</h3>
                   <p class="gray-list__li-text gray-list__li-text--friends">Ставьте лайки, комментируйте, делитесь
-                    фотографиями с друзьями
-                    и заводите новых</p>
+                    фотографиями с друзьями и заводите новых</p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
     </section>
     <section>
       <div class="smole">
-        <img class="smole__img" src="img/iphone-screen-3-tablet@1x.png" width="160" height="267" alt="">
+        <img class="smole__img" src="img/iphone-screen-3-tablet@1x.png" width="160" height="278" alt="">
       </div>
     </section>
     <section class="hours">
@@ -133,8 +154,9 @@
         </div>
         <div class="hours__bold">
           <h3 class="hours__bold-text"><span class="hours__bold-span">Эффект</span> на 24 часа!</h3>
-          <p class="hours__text">Британские ученые провели исследования и доказали,что положительный эффект от
-            использования приложения длится целые сутки!</p>
+          <p class="hours__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект
+            от&nbsp;использования приложения
+            длится целые сутки!</p>
           <a class="hours__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -142,6 +164,20 @@
 
     <div class="container d-flex">
       <div class="comments">
+        <img class="comments__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="">
+        <h3 class="comments__name">Николай Петров</h3>
+        <div class="comments__about">25 лет, водитель трамвая</div>
+        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+      <div class="comments-second">
+        <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
+        <h3 class="comments__name">Николай Петров</h3>
+        <div class="comments__about">25 лет, водитель трамвая</div>
+        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+      <div class="comments-third">
         <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
         <h3 class="comments__name">Николай Петров</h3>
         <div class="comments__about">25 лет, водитель трамвая</div>
@@ -149,120 +185,138 @@
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
     </div>
-    <div class="reviews__toggles">
-      <span class="reviews__toggle  reviews__toggle--active">1</span>
-      <span class="reviews__toggle">2</span>
-      <span class="reviews__toggle">3</span>
+    <div class="reviews-toggles d-flex">
+      <form action="form-button" method="GET">
+        <button class="reviews-toggles__button-active">
+          <span class="reviews__toggle  reviews__toggle--active">1</span>
+        </button>
+        <button class="reviews-toggles__button">
+          <span class="reviews__toggle">2</span>
+        </button>
+        <button class="reviews-toggles__button">
+          <span class="reviews__toggle">3</span>
+        </button>
+      </form>
     </div>
-    <section class="wrapper-table">
-      <div class="advantages-gray triangle-bg">
-        <div class="container  d-flex">
-          <table class="table">
-            <thead class="table__tarifs__header">
-              <tr class="table__tarifs">
-                <th class="table__tarifs__name">№п/п</th>
-                <th class="table__tarifs__name">
-                  <div class="table__tarifs__title">База</div>
-                  <div class="table__tarifs__cost">1,99 USD</div>
-                </th>
-                <th class="table__tarifs__name">
-                  <div class="table__tarifs__title">Стандарт</div>
-                  <div class="table__tarifs__cost">3,99 USD</div>
-                </th>
-                <th class="table__tarifs__name">
-                  <div class="table__tarifs__title">Анлим</div>
-                  <div class="table__tarifs__cost">9,99 USD</div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="table__tarifs__row">
-                <th class="table__tarifs__cell  table__tarifs__cell--caption">Розовый фильтр</th>
-                <td class="table__tarifs__cell">
-                  Розовый фильтр
-                  <span class="table__tarifs__mark">+
-                    <svg class="table__tarifs__mark-icon  price-table__mark-icon--yes" width="31" height="21">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                    </svg>
-                  </span>
-                </td>
-                <td class="table__tarifs__cell">
-                  Розовый фильтр
-                  <span class="table__tarifs__mark">+
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--yes" width="31" height="21">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                    </svg>
-                  </span>
-                </td>
-                <td class="table__tarifs__cell">
-                  Розовый фильтр
-                  <span class="table__tarifs__mark">+
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--yes" width="31" height="21">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                    </svg>
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__tarifs__row">
-                <th class="table__tarifs__cell  table__tarifs__cell--caption">Смайлики</th>
-                <td class="table__tarifs__cell">
-                  Смайлики
-                  <span class="table__tarifs__mark">-
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--no" width="27" height="27">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
-                    </svg>
-                  </span>
-                </td>
-                <td class="table__tarifs__cell">
-                  Смайлики
-                  <span class="table__tarifs__mark">+
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--yes" width="31" height="21">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                    </svg>
-                  </span>
-                </td>
-                <td class="table__tarifs__cell">
-                  Смайлики
-                  <span class="table__tarifs__mark">+
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--yes" width="31" height="21">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                    </svg>
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__tarifs__row">
-                <th class="table__tarifs__cell  table__tarifs__cell--caption">Комментарии</th>
-                <td class="table__tarifs__cell">
-                  Комментарии
-                  <span class="table__tarifs__mark">-
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--no" width="27" height="27">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
-                    </svg>
-                  </span>
-                </td>
-                <td class="table__tarifs__cell">
-                  Комментарии
-                  <span class="table__tarifs__mark">-
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--no" width="27" height="27">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
-                    </svg>
-                  </span>
-                </td>
-                <td class="table__tarifs__cell">
-                  Комментарии
-                  <span class="table__tarifs__mark">+
-                    <svg class="table__tarifs__mark-icon  table__tarifs__mark-icon--yes" width="31" height="21">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                    </svg>
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+    <section class="table-wrapper">
+      <div class="table-triangle"></div>
+      <div class="table-center">
+        <table class="table">
+          <thead class="table__tarifs-header">
+            <tr class="table__tarifs">
+              <th class="table__tarifs-name table__tarifs-name--corner"></th>
+              <th class="table__tarifs-name">
+                <div class="table__tarifs-title">База</div>
+                <div class="table__tarifs-cost">1,99 USD</div>
+              </th>
+              <th class="table__tarifs-name table__tarifs-name--hit">
+                <div class="table__tarifs-hit"></div>
+                <div class="table__tarifs-title">Стандарт</div>
+                <div class="table__tarifs-cost">3,99 USD</div>
+
+              </th>
+              <th class="table__tarifs-name">
+                <div class="table__tarifs-title">Анлим</div>
+                <div class="table__tarifs-cost">9,99 USD</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__tarifs-row">
+              <th class="table__tarifs-cell  table__tarifs-cell--caption">Розовый фильтр</th>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Розовый фильтр</span>
+                  <span class="table__tarifs__mark">+</span>
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                </div>
+              </td>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Розовый фильтр</span>
+                  <span class="table__tarifs__mark">+</span>
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                </div>
+              </td>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Розовый фильтр</span>
+                  <span class="table__tarifs__mark">+</span>
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                </div>
+              </td>
+            </tr>
+            <tr class="table__tarifs-row">
+              <th class="table__tarifs-cell  table__tarifs-cell--caption">Смайлики</th>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Смайлики</span>
+                  <span class="table__tarifs__mark">-</span>
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
+                </div>
+              </td>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Смайлики</span>
+                  <span class="table__tarifs__mark">+</span>
+
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                </div>
+              </td>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Смайлики</span>
+                  <span class="table__tarifs__mark">+</span>
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                </div>
+              </td>
+            </tr>
+            <tr class="table__tarifs-row">
+              <th class="table__tarifs-cell  table__tarifs-cell--caption">Комментарии</th>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Комментарии</span>
+                  <span class="table__tarifs__mark">-</span>
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
+                </div>
+              </td>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Комментарии</span>
+                  <span class="table__tarifs__mark">-</span>
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
+                </div>
+              </td>
+              <td class="table__tarifs-cell">
+                <div class="table__tarifs-flex">
+                  <span class="table__tarifs-mobile">Комментарии</span>
+                  <span class="table__tarifs__mark">+</span>
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
-    <section class="contacts   d-flex">
+
+    <div class="reviews-toggles reviews-toggles--background">
+      <form class="reviews-toggles__form" action="form-button" method="GET">
+
+        <button class="reviews-toggles__button-table">
+          <span class="reviews__toggle">1</span>
+        </button>
+        <button class="reviews-toggles__button-active-table">
+          <span class="reviews__toggle  reviews__toggle--active">2</span>
+        </button>
+        <button class="reviews-toggles__button-table">
+          <span class="reviews__toggle">3</span>
+        </button>
+      </form>
+
+    </div>
+    <section class="contacts">
       <div class="container">
         <div class="contacts__lead">
           <h2 class="contacts__title"> Остались вопросы?
@@ -278,7 +332,8 @@
               </div>
               <div class="contacts__item  contacts__item--email">
                 <h3 class="contacts__item-lead">Пишите:</h3>
-                <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__item-info contacts__item-mail"
+                  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="contacts__item  contacts__item--address">
                 <h3 class="contacts__item-lead">Приезжайте в гости:</h3>
@@ -287,72 +342,69 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map-wrap">
-          <div class="contacts__relative contacts__triangle">
 
-            <picture class="contacts__map">
-              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-              <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-            </picture>
-            <svg class="contacts__map-marker" width="35.983" height="35.983">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-map-marker"></use>
-            </svg>
-            </a>
-            <iframe class="contacts__map-frame"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.215853219686!2d30.321586671047747!3d59.938930247265006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1482585841402"
-              width="1200" height="500" allowfullscreen></iframe>
-          </div>
+      </div>
+
+      <div class="contacts__map-wrap">
+        <div class="contacts__relative contacts__triangle">
+
+          <svg class="map-marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px"
+            viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+            <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991" />
+            <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866" />
+          </svg>
+
+          <iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCfaZONT" width="1200"
+            height="700" ></iframe>
+
+
         </div>
-
-
-      </div>
-      </div>
       </div>
     </section>
   </main>
-  <div class="container">
-    <footer class="main-footer">
+  <div class="container main-footer--index ">
+    <footer class="main-footer ">
 
       <a class="main-footer__logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="">
-      </a>
-      <ul class="socialbutton">
-        <li class="socialbutton__li">
-          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Twitter</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
-              viewBox="0 0 17 15">
-              <path fill="#d22856"
-                d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-            </svg>
-          </a>
-        </li>
-        <li class="socialbutton__li">
-          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Фейсбук</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-              <path fill="#d22856" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
-          </a>
-        </li>
-        <li class="socialbutton__li">
-          <a class="socialbutton__icon" href="#"><span class="visually-hidden">Youtube</span>
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
-              viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-              <path fill="#d22856"
-                d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
-            </svg>
+        <picture class="main-footer__pic">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="main-footer__hover" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink logo">
+        </picture>
+        <picture class="main-footer--hover">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-footer-desktop.svg">
+          <img class="main-footer__hover" src="./img/logo-pink-footer-mobile.svg" width="147" height="40"
+            alt="Pink logo">
+        </picture>
 
-          </a>
-        </li>
-      </ul>
+      </a>
+      <div class="socialbutton">
+        <a class="socialbutton__li socialbutton__icon" href="#"><span class="visually-hidden">Twitter</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
+            viewBox="0 0 17 15">
+            <path
+              d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+          </svg>
+        </a>
+        <a class="socialbutton__li socialbutton__icon" href="#"><span class="visually-hidden">Фейсбук</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+            <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
+        </a>
+        <a class="socialbutton__li socialbutton__icon" href="#"><span class="visually-hidden">Youtube</span>
+          <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96"
+            enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <path
+              d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+          </svg>
+        </a>
+      </div>
       <div class="copyright">
         <p class="copyright__by">Разработано</p>
         <a class="copyright-active" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
-            viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 41" width="115" height="41">
             <title>HTML Academy</title>
-            <path fill="#d22856"
+            <path
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
           </svg>
 
