@@ -5,6 +5,12 @@
   background-repeat: no-repeat;
 }
 
+.page-header__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .page-header__close {
   display: block;
   width: 24px;
@@ -19,7 +25,7 @@
   visibility: hidden;
 }
 
-.page-header__pic--hover {
+.page-header__pic-hover {
   display: none;
 }
 
@@ -28,7 +34,7 @@
     display: none;
   }
 
-  .page-header__pic--hover {
+  .page-header__pic-hover {
     display: block;
   }
 }
@@ -40,13 +46,12 @@
     opacity: 0.3;
   }
 
-  .page-header__pic--hover {
+  .page-header__pic-hover {
     display: none;
   }
 }
 
 .site-list__item--active {
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -75,6 +80,10 @@
     padding-left: 11px;
   }
 
+  .page-header__wrapper {
+    max-width: 640px;
+  }
+
   .page-header__close {
     top: 43px;
     right: 10px;
@@ -93,8 +102,12 @@
     padding-top: 26px;
   }
 
-  .page-header {
+  .page-header__wrapper {
+    max-width: 940px;
+    display: flex;
+  }
 
+  .page-header {
     margin: auto;
     position: absolute;
     width: 100%;

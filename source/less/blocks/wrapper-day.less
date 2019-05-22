@@ -1,12 +1,11 @@
 .wrapper-day {
   display: block;
   position: relative;
+  text-align: center;
 }
 
 .wrapper-day__panorama {
   position: absolute;
-  top: 0;
-  right: 25px;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
@@ -14,6 +13,10 @@
   background-color: #d22856;
   text-transform: uppercase;
   padding: 6px 20px;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .wrapper-day__first {
@@ -22,13 +25,12 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .wrapper-day__img {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
-  width: 320px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: @tablet-width) {

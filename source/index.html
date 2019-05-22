@@ -11,37 +11,37 @@
 
 <body>
   <header class="page-header">
-    <div class="main-nav__wrapper">
+    <div class="page-header__wrapper">
 
-        <a class="page-header__logo">
-          <picture class="page-header__pic">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
-          </picture>
-          <picture class="page-header__pic--hover">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
-            <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
-          </picture>
-        </a>
-        <button class="page-header__close"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a>HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      <a class="page-header__logo">
+        <picture class="page-header__pic">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+        </picture>
+        <picture class="page-header__pic-hover">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
+          <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
+        </picture>
+      </a>
+      <button class="page-header__close"></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a>HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
 
     </div>
 
@@ -51,27 +51,27 @@
     <section class="download">
       <div class="download__head">
         <div class="download__bg">
-          <div class="download--container">
+          <div class="download__container">
             <p class="download__title">Взгляните на жизнь иначе!</p>
-            <a class="download__href" href="https://itunes.apple.com">Скачать приложение</a>
+            <button class="download__btn">Скачать приложение</button>
 
             <ul class="download__in-touch">
-              <li class="download__apple">
-                <a class="downloads__app  downloads__app--apple" href="https://itunes.apple.com" target="_blank"
-                  title="Скачать для iPhone и iPad">
+              <li class="download__in-touch-apple">
+                <a class="download__in-touch__app  download__in-touch__app--apple" href="https://itunes.apple.com"
+                  target="_blank" title="Скачать для iPhone и iPad">
                   <img src="./img/logo-apple.svg" width="47" height="56" alt="">
                   <span class="visually-hidden">Apple</span>
                 </a>
               </li>
               <li class="download__android">
-                <a class="downloads__app  downloads__app--android" href="https://play.google.com" target="_blank"
-                  title="Скачать для Android">
+                <a class="download__in-touch__app  download__in-touch__app--apple" href="https://play.google.com"
+                  target="_blank" title="Скачать для Android">
                   <img src="./img/logo-android.svg" width="47" height="56" alt="">
                   <span class="visually-hidden">Android</span>
                 </a>
               </li>
               <li class="download__windows">
-                <a class="downloads__app  downloads__app--windows" href="https://www.microsoft.com/store/"
+                <a class="download__in-touch__app  download__in-touch-windows" href="https://www.microsoft.com/store/"
                   target="_blank" title="Скачать для Windows Phone">
                   <img src="./img/logo-microsoft.svg" width="47" height="56" alt="">
                   <span class="visually-hidden">Windows</span>
@@ -98,44 +98,46 @@
       </div>
       <div class="wrapper-gray">
         <div class="advantages-gray triangle-bg">
-          <div class="advantages-gray--flex">
-              <picture>
-                <img class="advantages-gray__img"
-                  srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"
-                  src="./img/iphone-screen-3-tablet@1x.png" width="268" height="485" alt="Заводит новых друзей">
-              </picture>
-              <ul class="gray-list">
-                <li class="gray-list__li gray-list--mood">
-                  <picture>
-                    <img class="gray-list__img"
-                      srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"
-                      src="./img/iphone-screen-1-desktop@1x.png" alt="Поднимает настроение">
-                  </picture>
-                  <h3 class="gray-list__li-bold">Поднимает настроение</h3>
-                  <p class="gray-list__li-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-                    несколько кликов!</p>
-                </li>
-                <li class="gray-list__li gray-list--world">
-                  <picture>
-                    <img class="gray-list__img"
-                      srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"
-                      src="./img/iphone-screen-2-desktop@1x.png" alt="Меняет мир вокруг">
-                  </picture>
-                  <h3 class="gray-list__li-bold">Меняет мир вокруг</h3>
-                  <p class="gray-list__li-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                    усилить эффект</p>
-                </li>
-                <li class="gray-list__li gray-list--friends">
-                  <picture>
-                    <img class="gray-list__img"
-                      srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"
-                      src="./img/iphone-screen-3-desktop@1x.png" alt="Заводит новых друзей">
-                  </picture>
-                  <h3 class="gray-list__li-bold gray-list__li-bold--friends">Заводит новых друзей</h3>
-                  <p class="gray-list__li-text gray-list__li-text--friends">Ставьте лайки, комментируйте, делитесь
-                    фотографиями с друзьями и заводите новых</p>
-                </li>
-              </ul>
+          <div class="advantages-gray-flex">
+            <picture>
+              <img class="advantages-gray__ferst"
+                srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"
+                src="./img/iphone-screen-3-tablet@1x.png" width="268" height="485" alt="Заводит новых друзей">
+            </picture>
+            <ul class="advantages-gray__ul">
+              <li class="advantages-gray__li advantages-gray-mood">
+                <picture>
+                  <img class="advantages-gray__img"
+                    srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"
+                    src="./img/iphone-screen-1-desktop@1x.png" alt="Поднимает настроение">
+                </picture>
+                <h3 class="advantages-gray__li-bold">Поднимает настроение</h3>
+                <p class="advantages-gray__li-text">Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально в
+                  несколько кликов!</p>
+              </li>
+              <li class="advantages-gray__li advantages-gray-world">
+                <picture>
+                  <img class="advantages-gray__img"
+                    srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"
+                    src="./img/iphone-screen-2-desktop@1x.png" alt="Меняет мир вокруг">
+                </picture>
+                <h3 class="advantages-gray__li-bold">Меняет мир вокруг</h3>
+                <p class="advantages-gray__li-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                  чтобы
+                  усилить эффект</p>
+              </li>
+              <li class="advantages-gray__li advantages-gray-friends">
+                <picture>
+                  <img class="advantages-gray__img"
+                    srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"
+                    src="./img/iphone-screen-3-desktop@1x.png" alt="Заводит новых друзей">
+                </picture>
+                <h3 class="advantages-gray__li-bold advantages-gray__li-bold-friends">Заводит новых друзей</h3>
+                <p class="advantages-gray__li-text advantages-gray__li-text--friends">Ставьте лайки, комментируйте, делитесь
+                  фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
 
           </div>
         </div>
@@ -148,7 +150,7 @@
       </div>
     </section>
     <section class="hours">
-      <div class="container hours__picture-wrapper--flex">
+      <div class="container hours__picture-wrapper-flex">
         <div class="hours__picture-wrapper">
           <img class="hours-timer" src="./img/icon-timer.svg" width="242" height="279" alt="">
         </div>
@@ -171,31 +173,33 @@
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
       <div class="comments-second">
-        <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
-        <h3 class="comments__name">Николай Петров</h3>
-        <div class="comments__about">25 лет, водитель трамвая</div>
-        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+        <img class="comments-second__commas" src="./img/icon-quotes.svg" alt="">
+        <h3 class="comments-second__name">Николай Петров</h3>
+        <div class="comments-second__about">25 лет, водитель трамвая</div>
+        <p class="comments-second__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
       <div class="comments-third">
-        <img class="comments__commas" src="./img/icon-quotes.svg" alt="">
-        <h3 class="comments__name">Николай Петров</h3>
-        <div class="comments__about">25 лет, водитель трамвая</div>
-        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+        <img class="comments-third__commas" src="./img/icon-quotes.svg" alt="">
+        <h3 class="comments-third__name">Николай Петров</h3>
+        <div class="comments-third__about">25 лет, водитель трамвая</div>
+        <p class="comments-third__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+          серые
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
     </div>
     <div class="reviews-toggles d-flex">
 
-        <button class="reviews-toggles__button-active">
-          <span class="reviews__toggle  reviews__toggle--active">1</span>
-        </button>
-        <button class="reviews-toggles__button">
-          <span class="reviews__toggle">2</span>
-        </button>
-        <button class="reviews-toggles__button">
-          <span class="reviews__toggle">3</span>
-        </button>
+      <button class="reviews-toggles__button-active">
+        <span class="reviews-toggles__span  reviews-toggles__span--active">1</span>
+      </button>
+      <button class="reviews-toggles__button">
+        <span class="reviews-toggles__span">2</span>
+      </button>
+      <button class="reviews-toggles__button">
+        <span class="reviews-toggles__span">3</span>
+      </button>
 
     </div>
 
@@ -302,16 +306,16 @@
     </section>
 
     <div class="reviews-toggles reviews-toggles--background">
-      <div class="reviews-toggles__form" >
+      <div class="reviews-toggles__form">
 
         <button class="reviews-toggles__button-table">
-          <span class="reviews__toggle">1</span>
+          <span class="reviews-toggles__span">1</span>
         </button>
         <button class="reviews-toggles__button-active-table">
-          <span class="reviews__toggle  reviews__toggle--active">2</span>
+          <span class="reviews-toggles__span  reviews-toggles__span--active">2</span>
         </button>
         <button class="reviews-toggles__button-table">
-          <span class="reviews__toggle">3</span>
+          <span class="reviews-toggles__span">3</span>
         </button>
       </div>
 
@@ -356,14 +360,14 @@
           </svg>
 
           <iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCfaZONT" width="1200"
-            height="700" ></iframe>
+            height="700"></iframe>
 
 
         </div>
       </div>
     </section>
   </main>
-  <div class="container main-footer--index ">
+  <div class="container main-footer-index ">
     <footer class="main-footer ">
 
       <a class="main-footer__logo" href="index.html">
@@ -371,7 +375,7 @@
           <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
           <img class="main-footer__hover" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink logo">
         </picture>
-        <picture class="main-footer--hover">
+        <picture class="main-footer-hover">
           <source media="(min-width: 960px)" srcset="img/logo-pink-footer-desktop.svg">
           <img class="main-footer__hover" src="./img/logo-pink-footer-mobile.svg" width="147" height="40"
             alt="Pink logo">

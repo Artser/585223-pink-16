@@ -8,14 +8,14 @@
   background-color: #f2f2f2;
 }
 
-.advantages-gray--flex {
+.advantages-gray-flex {
   display: flex;
   margin: 0 auto;
   width: 100%;
   max-width: 280px;
 }
 
-.advantages-gray__img {
+.advantages-gray__ferst {
   display: none;
 }
 
@@ -33,6 +33,63 @@
   margin: 0 auto;
 }
 
+.advantages-gray__ul {
+  //background-color: rgb(242, 242, 242);
+  padding: 0;
+  list-style: none;
+  display: block;
+  margin: 14px 0 0;
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.advantages-gray__img {
+  display: none;
+}
+
+.advantages-gray-world {
+  padding-top: 1px;
+  padding-left: 39px;
+}
+
+.advantages-gray-friends {
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+
+.advantages-gray__li {
+  padding: 0;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.advantages-gray__li-text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #283645;
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.advantages-gray__li-bold {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: black;
+  margin: 0 0 8px;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
   .advantages-gray {
     padding-top: 86px;
@@ -42,7 +99,65 @@
     margin: 25px 0 0;
   }
 
-  .advantages-gray__img {
+  .advantages-gray__ul {
+    display: flex;
+    width: 100%;
+    margin-top: -16px;
+    flex: 0 0 360px;
+    max-width: 360px;
+    flex-direction: column;
+  }
+
+  .advantages-gray-world {
+    padding-top: 1px;
+    padding-left: 21px;
+  }
+
+  .advantages-gray__li {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 40px;
+    margin: 0 0 33px;
+    width: 320px;
+  }
+
+  .advantages-gray__li-text {
+    padding-left: 0;
+    margin-bottom: 0;
+    width: auto;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.2px;
+  }
+
+  // .advantages-gray__li-bold {
+  //  text-align: left;
+  // margin: 2px 0 6px;
+  //}
+
+  .advantages-gray__li-bold {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.71;
+    text-align: left;
+    padding-left: 8px;
+    color: #283645;
+    margin-bottom: 10px;
+  }
+
+  .gray-list__li-text--friends {
+    width: 300px;
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.2px;
+    margin-bottom: -20px;
+  }
+
+  .advantages-gray__ferst {
     display: block;
     margin-top: -83px;
     margin-left: 10px;
@@ -53,13 +168,13 @@
     margin: 0 auto;
   }
 
-  .advantages-gray--flex {
+  .advantages-gray-flex {
     max-width: 640px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .advantages-gray__img {
+  .advantages-gray__ferst {
     display: none;
   }
 
@@ -70,7 +185,84 @@
     background-size: 100%;
   }
 
-  .advantages-gray--flex {
+  .advantages-gray-flex {
     max-width: 940px;
+  }
+
+  .advantages-gray__ul {
+    max-width: 940px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    flex-direction: row;
+  }
+
+  .advantages-gray-world {
+    margin: 0 25px 0;
+  }
+
+  .advantages-gray__img {
+    padding-bottom: 54px;
+    display: flex;
+  }
+
+  .advantages-gray__li {
+    display: block;
+    width: 285px;
+    //flex-wrap: wrap;
+    //padding-right: 10px;
+    position: relative;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    top: 0;
+  }
+
+  .advantages-gray__li-text {
+    //display: flex;
+    width: 233px;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 16px;
+    padding-top: 0;
+  }
+
+  .advantages-gray__li-bold {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #283645;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  .gray-list__li-bold--friends {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding-bottom: 23px;
+    padding-left: 0;
+  }
+
+  .advantages-gray__li-text--friends {
+    width: 233px;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 46px;
   }
 }
