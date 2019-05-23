@@ -36,13 +36,13 @@
 @media (min-width: @tablet-width) {
   .wrapper-day__img {
     min-height: 509px;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: -4px;
   }
 
   .wrapper-day__panorama {
-    top: 56px;
-    right: 20px;
+    transform: translateX(170px);
+    top: 57px;
   }
 
   .wrapper-day__first {
@@ -54,7 +54,7 @@
   }
 
   .wrapper-day {
-    margin-bottom: 48px;
+    margin-bottom: 54px;
   }
 }
 
@@ -63,7 +63,7 @@
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(242, 242, 242);
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     display: flex;
     flex-direction: column;
     margin-top: -4px;
@@ -76,15 +76,15 @@
   }
 
   .wrapper-day__img {
-    width: 120%;
     position: relative;
-    margin-left: 47%;
-    transform: translate(-49%);
-    overflow: hidden;
+    width: auto;
+    max-width: inherit;
+    left: 40%;
+    transform: translateX(-50%);
   }
 
   .wrapper-day__panorama {
-    top: 53px;
-    right: 47px;
+    transform: translateX(208px);
+    top: 55px;
   }
 }

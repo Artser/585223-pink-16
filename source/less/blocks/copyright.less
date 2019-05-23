@@ -1,5 +1,4 @@
 .copyright__by {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -12,11 +11,13 @@
 }
 
 .copyright__logo {
-  display: flex;
-  margin-top: 8px;
-  justify-content: center;
-  align-items: center;
+  //display: flex;
+  //margin-top: 8px;
+  //justify-content: center;
+  //align-items: center;
   fill: #d22856;
+  //width: 33px;
+  //height: 33px;
 }
 
 .copyright__logo:hover {
@@ -32,7 +33,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 89px;
+}
+
+.copyright-active {
+  margin-top: 8px;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,19 +49,19 @@
   }
 
   .copyright__by {
-    padding-right: 18px;
+    padding-right: 16px;
     margin-top: 0;
   }
 
   .copyright-active {
-    margin-top: -15px;
+    margin-top: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .copyright {
-    margin-top: 30px;
-    margin-left: 13px;
+    margin-top: 27px;
+    margin-left: 18px;
   }
 
   .copyright__by {
@@ -66,6 +70,6 @@
   }
 
   .copyright-active {
-    margin-top: -14px;
+    margin-top: -4px;
   }
 }
