@@ -31,6 +31,7 @@
 .wrapper-day__img {
   max-width: 100%;
   height: auto;
+  image-rendering: crisp-edges;
 }
 
 @media (min-width: @tablet-width) {
@@ -86,5 +87,23 @@
   .wrapper-day__panorama {
     transform: translateX(208px);
     top: 55px;
+  }
+}
+
+@media (min-width: 1012px) {
+  .wrapper-day__img {
+    position: relative;
+    width: auto;
+  }
+}
+
+@media (min-width: 1372px) {
+  .wrapper-day__first {
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -4px;
   }
 }
