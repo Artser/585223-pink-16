@@ -13,7 +13,7 @@
 }
 
 .wrapper-guest-like {
-  padding-left: 20px;
+
   padding-bottom: 19px;
 }
 
@@ -45,6 +45,10 @@
   text-transform: uppercase;
 }
 
+.wrapper-guest-heart {
+  margin-right: 13px;
+}
+
 .wrapper-guest__comments {
   background-color: rgb(242, 242, 242);
   font-size: 14px;
@@ -60,28 +64,17 @@
   margin-bottom: 11px;
 }
 
-.wrapper-day__first-name {
-  font-size: 14px;
-  font-weight: bold;
-  padding-left: 18px;
-  margin-bottom: 2px;
-  line-height: 1.7;
-  margin-top: 12px;
-}
-
 .wrapper-day__comments {
   font-size: 14px;
   line-height: 24px;
   margin-right: 0;
   margin-top: 0;
-  padding-left: 19px;
   margin-bottom: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .wrapper-guest {
     display: flex;
-    //width: 300px;
     flex-wrap: wrap;
     margin: 0 0 20px;
   }
@@ -89,17 +82,6 @@
   .wrapper-guest__background {
     display: flex;
     flex-direction: column;
-  }
-
-  .wrapper-day__first-name {
-    order: 1;
-    padding-top: 0;
-    margin-top: -43px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 8px;
-    padding-bottom: 2px;
   }
 
   .wrapper-guest__name {
@@ -121,29 +103,24 @@
   }
 
   .wrapper-guest-like {
-    padding-left: 20px;
-    padding-bottom: 19px;
     margin-left: auto;
-    padding-right: 32px;
-    padding-top: 8px;
     display: flex;
     align-items: center;
+    padding-bottom: 0;
   }
 
   .wrapper-guest-heart {
     order: 1;
-    margin-left: 13px;
-    padding-top: 11px;
+    margin-left: 19px;
+    margin-right: 0;
   }
 
   .wrapper-day__comments {
     order: 3;
     margin-top: -15px;
     padding-bottom: 12px;
-    padding-left: 28px;
     font-size: 14px;
     padding-top: 12px;
-    width: 519px;
   }
 }
 
@@ -162,25 +139,17 @@
     margin-top: 0;
     padding-left: 28px;
     margin-bottom: 0;
-  }
-
-  .wrapper-day__first-name {
-    margin-left: 2px;
+    padding-right: 10px;
   }
 
   .wrapper-day__comments {
-    padding-left: 21px;
     width: auto;
   }
 
   .wrapper-guest-like {
-    padding-left: 20px;
-    padding-bottom: 19px;
     margin-left: auto;
-    padding-top: 11px;
     display: flex;
     align-items: center;
-    padding-right: 64px;
   }
 
   .wrapper-guest__name {

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Приложение Pink</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="preload" as="font" href="./fonts/opensans.woff" type="font/woff" crossorigin>
 
 </head>
 
@@ -56,7 +56,8 @@
           <picture>
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-            <img class="wrapper-day__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+              <source  srcset="img/panorama-mobile@1x.jpg, img/panorama-mobile@2x.jpg 2x">
+            <img class="wrapper-day__img" src="img/panorama-desktop@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
               alt="Панорама дня">
           </picture>
         </a>
@@ -114,7 +115,7 @@
               <p class="wrapper-guest__comments">Соседи будут рады!</p>
               <div class="like-block">
                 <img class="like-block__img" src="./img/icon-heart.svg" width="13" height="12" alt="heart">
-                <span class="counter">Нравится:666</span>
+                <span class="counter">Нравится: 666</span>
               </div>
             </div>
           </li>
@@ -135,7 +136,7 @@
               <p class="wrapper-guest__comments">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="like-block">
                 <img class="like-block__img" src="./img/icon-heart.svg" width="13" height="12" alt="heart">
-                <span class="counter">Нравится:215</span>
+                <span class="counter">Нравится: 215</span>
               </div>
             </div>
           </li>
@@ -156,7 +157,7 @@
               <p class="wrapper-guest__comments">Самая кубанская в мире!</p>
               <div class="like-block">
                 <img class="like-block__img" src="./img/icon-heart.svg" width="13" height="12" alt="heart">
-                <span class="counter">Нравится:4</span>
+                <span class="counter">Нравится: 4</span>
               </div>
             </div>
           </li>
@@ -177,7 +178,7 @@
               <p class="wrapper-guest__comments wrapper-guest__comments2">Где снег-то?</p>
               <div class="like-block">
                 <img class="like-block__img" src="./img/icon-heart.svg" width="13" height="12" alt="heart">
-                <span class="counter">Нравится:150</span>
+                <span class="counter">Нравится: 150</span>
               </div>
             </div>
           </li>
@@ -198,7 +199,7 @@
               <p class="wrapper-guest__comments wrapper-guest__comments2">Всем GM и взаимные лайки!</p>
               <div class="like-block">
                 <img class="like-block__img" src="./img/icon-heart.svg" width="13" height="12" alt="heart">
-                <span class="counter">Нравится:2560</span>
+                <span class="counter">Нравится: 2560</span>
               </div>
             </div>
           </li>

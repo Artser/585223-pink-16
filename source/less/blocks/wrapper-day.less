@@ -26,19 +26,31 @@
   width: 280px;
   margin: 0 auto;
   text-align: left;
+  padding-left: 19px;
+  padding-right: 19px;
+  box-sizing: border-box;
+  padding-top: 16px;
 }
 
-.wrapper-day__img {
-  max-width: 100%;
-  height: auto;
-  image-rendering: crisp-edges;
+.wrapper-day__start {
+  min-width: 320px;
+  height: 137px;
+  overflow: hidden;
+  width: 100%;
 }
+
+.wrapper-day__first-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
 
 @media (min-width: @tablet-width) {
-  .wrapper-day__img {
+  .wrapper-day__start {
     min-height: 509px;
-    max-width: 100%;
     margin-bottom: -4px;
+    width: 660px;
   }
 
   .wrapper-day__panorama {
@@ -48,27 +60,51 @@
 
   .wrapper-day__first {
     width: 620px;
-    //margin-top: -4px;
-    padding-top: 0;
+    padding-top: 25px;
     display: flex;
     margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .wrapper-day__first-name {
+    padding-top: 0;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .wrapper-day {
     margin-bottom: 54px;
   }
+
+  .wrapper-day__img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .wrapper-day__first {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(242, 242, 242);
     margin-bottom: 23px;
     display: flex;
-    flex-direction: column;
-    margin-top: -4px;
-    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 940px;
+    padding-right: 31px;
+    padding-top: 24px;
+  }
+
+  .wrapper-day__start {
+    display: block;
+    overflow: hidden;
+    height: 506px;
+    width: 100%;
   }
 
   .wrapper-day {
@@ -78,32 +114,14 @@
 
   .wrapper-day__img {
     position: relative;
-    width: auto;
-    max-width: inherit;
-    left: 40%;
-    transform: translateX(-50%);
+  }
+
+  .wrapper-day__first-name {
+    margin-left: 2px;
   }
 
   .wrapper-day__panorama {
-    transform: translateX(208px);
+    transform: translateX(329px);
     top: 55px;
-  }
-}
-
-@media (min-width: 1012px) {
-  .wrapper-day__img {
-    position: relative;
-    width: auto;
-  }
-}
-
-@media (min-width: 1372px) {
-  .wrapper-day__first {
-    margin: 0 auto;
-    background-color: rgb(242, 242, 242);
-    margin-bottom: 23px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -4px;
   }
 }
