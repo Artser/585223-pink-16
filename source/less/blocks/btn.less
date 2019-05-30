@@ -1,0 +1,59 @@
+.btn--submit {
+  padding: 14px 30px 16px;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  letter-spacing: 0.3px;
+  border: 0;
+}
+
+.btn--popup {
+  padding: 17px 30px 16px;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 0;
+  outline: none;
+}
+
+.btn--submit:hover,
+.btn--submit:focus,
+.btn--popup:hover,
+.btn--popup:focus {
+  background-color: #1c9b5e;
+}
+
+.btn--submit:active,
+.btn--popup:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn--submit:disabled,
+.btn--popup:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+@media (min-width: @tablet-width) {
+  .btn--submit {
+    padding: 16px 44px 16px;
+    letter-spacing: 0.45px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn--submit {
+    padding: 17px 30px 16px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    padding-left: 31px;
+  }
+}

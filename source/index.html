@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Приложение Pink</title>
   <link href="css/style.css" rel="stylesheet">
-  <link rel="preload" as="font" href="./fonts/opensans.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="./fonts/opensans.woff2" type="font/woff2" crossorigin>
 
 </head>
 
@@ -18,12 +18,15 @@
         <picture class="page-header__pic">
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+          <source media="(min-width: 100px)" srcset="img/logo-pink-white-mobile.svg">
+          <img class="page-header__hover" src="./img/logo-pink-white-desktop.svg" width="147" height="41"
+            alt="Pink logo">
         </picture>
         <picture class="page-header__pic-hover">
           <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
-          <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
+          <source media="(min-width: 100px)" srcset="img/logo-pink-red-mobile.svg">
+          <img class="page-header__hover" src="./img/logo-pink-red-desktop.svg" width="147" height="41" alt="Pink logo">
         </picture>
       </a>
       <button class="page-header__close"></button>
@@ -59,21 +62,21 @@
               <li class="download__in-touch-apple">
                 <a class="download__in-touch__app  download__in-touch__app--apple" href="https://itunes.apple.com"
                   target="_blank" title="Скачать для iPhone и iPad">
-                  <img src="./img/logo-apple.svg" width="47" height="56" alt="">
+                  <img src="./img/logo-apple.svg" width="47" height="56" alt="Apple">
                   <span class="visually-hidden">Apple</span>
                 </a>
               </li>
               <li class="download__android">
                 <a class="download__in-touch__app  download__in-touch__app--apple" href="https://play.google.com"
                   target="_blank" title="Скачать для Android">
-                  <img src="./img/logo-android.svg" width="47" height="56" alt="">
+                  <img src="./img/logo-android.svg" width="47" height="56" alt="Android">
                   <span class="visually-hidden">Android</span>
                 </a>
               </li>
               <li class="download__windows">
                 <a class="download__in-touch__app  download__in-touch-windows" href="https://www.microsoft.com/store/"
                   target="_blank" title="Скачать для Windows Phone">
-                  <img src="./img/logo-microsoft.svg" width="47" height="56" alt="">
+                  <img src="./img/logo-microsoft.svg" width="47" height="56" alt="Windows">
                   <span class="visually-hidden">Windows</span>
                 </a>
               </li>
@@ -86,12 +89,12 @@
     <section class="advantages">
       <div class="advantages-white">
         <div class="container">
-          <ul class="white-list">
-            <li class="white-list__li">
-              <p class="white-text">Устали от серости мегаполиса?</p>
+          <ul class="luring-list">
+            <li class="luring-list__li">
+              <p class="luring-text">Устали от серости мегаполиса?</p>
             </li>
-            <li class="white-list__li">
-              <p class="white-text white-text__tablet">Нам есть, что вам предложить!</p>
+            <li class="luring-list__li">
+              <p class="luring-text luring-text__tablet">Нам есть, что вам предложить!</p>
             </li>
           </ul>
         </div>
@@ -109,7 +112,7 @@
                 <picture>
                   <img class="advantages-gray__img"
                     srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"
-                    src="./img/iphone-screen-1-desktop@1x.png" alt="Поднимает настроение">
+                    src="./img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="Поднимает настроение">
                 </picture>
                 <h3 class="advantages-gray__li-bold">Поднимает настроение</h3>
                 <p class="advantages-gray__li-text">Приложение позволит вам победить осеннюю хандру и депрессию
@@ -120,7 +123,7 @@
                 <picture>
                   <img class="advantages-gray__img"
                     srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"
-                    src="./img/iphone-screen-2-desktop@1x.png" alt="Меняет мир вокруг">
+                    src="./img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="Меняет мир вокруг">
                 </picture>
                 <h3 class="advantages-gray__li-bold">Меняет мир вокруг</h3>
                 <p class="advantages-gray__li-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
@@ -131,7 +134,7 @@
                 <picture>
                   <img class="advantages-gray__img"
                     srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"
-                    src="./img/iphone-screen-3-desktop@1x.png" alt="Заводит новых друзей">
+                    src="./img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="Заводит новых друзей">
                 </picture>
                 <h3 class="advantages-gray__li-bold advantages-gray__li-bold-friends">Заводит новых друзей</h3>
                 <p class="advantages-gray__li-text advantages-gray__li-text--friends">Ставьте лайки, комментируйте,
@@ -145,13 +148,13 @@
     </section>
     <section>
       <div class="smole">
-        <img class="smole__img" src="img/iphone-screen-3-tablet@1x.png" width="160" height="278" alt="">
+        <img class="smole__img" src="img/iphone-screen-3-tablet@1x.png" width="160" height="278" alt="iphone-screen">
       </div>
     </section>
     <section class="hours">
       <div class="container hours__picture-wrapper-flex">
         <div class="hours__picture-wrapper">
-          <img class="hours-timer" src="./img/icon-timer.svg" width="242" height="279" alt="">
+          <img class="hours-timer" src="./img/icon-timer.svg" width="242" height="279" alt="icon-timer">
         </div>
         <div class="hours__bold">
           <h3 class="hours__bold-text"><span class="hours__bold-span">Эффект</span> на 24 часа!</h3>
@@ -165,14 +168,14 @@
 
     <div class="container d-flex">
       <div class="comments">
-        <img class="comments__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="">
+        <img class="comments__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="кавычки">
         <h3 class="comments__name">Николай Петров</h3>
         <div class="comments__about">25 лет, водитель трамвая</div>
         <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
       <div class="comments-second">
-        <img class="comments-second__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="">
+        <img class="comments-second__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="кавычки">
         <h3 class="comments-second__name">Николай Петров</h3>
         <div class="comments-second__about">25 лет, водитель трамвая</div>
         <p class="comments-second__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
@@ -180,7 +183,7 @@
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
       <div class="comments-third">
-        <img class="comments-third__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="">
+        <img class="comments-third__commas" src="./img/icon-quotes.svg" width="79" height="63" alt="кавычки">
         <h3 class="comments-third__name">Николай Петров</h3>
         <div class="comments-third__about">25 лет, водитель трамвая</div>
         <p class="comments-third__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
@@ -228,21 +231,21 @@
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Розовый фильтр</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="да">
                 </div>
               </td>
               <td class="table__tarifs-cell">
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Розовый фильтр</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="да">
                 </div>
               </td>
               <td class="table__tarifs-cell">
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Розовый фильтр</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="да">
                 </div>
               </td>
             </tr>
@@ -252,7 +255,7 @@
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Смайлики</span>
                   <span class="table__tarifs__mark">-</span>
-                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="минус">
                 </div>
               </td>
               <td class="table__tarifs-cell">
@@ -260,14 +263,14 @@
                   <span class="table__tarifs-mobile">Смайлики</span>
                   <span class="table__tarifs__mark">+</span>
 
-                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="да">
                 </div>
               </td>
               <td class="table__tarifs-cell">
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Смайлики</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="да">
                 </div>
               </td>
             </tr>
@@ -277,21 +280,21 @@
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Комментарии</span>
                   <span class="table__tarifs__mark">-</span>
-                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="нет">
                 </div>
               </td>
               <td class="table__tarifs-cell">
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Комментарии</span>
                   <span class="table__tarifs__mark">-</span>
-                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="">
+                  <img class="table-icon" src="./img/no-svg.svg" width="27" height="26" alt="нет">
                 </div>
               </td>
               <td class="table__tarifs-cell">
                 <div class="table__tarifs-flex">
                   <span class="table__tarifs-mobile">Комментарии</span>
                   <span class="table__tarifs__mark">+</span>
-                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="">
+                  <img class="table-icon" src="./img/icon-yes.svg" width="31" height="21" alt="да">
                 </div>
               </td>
             </tr>

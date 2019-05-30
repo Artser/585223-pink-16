@@ -7,22 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Приложение Pink</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" as="font" href="./fonts/opensans.woff2" type="font/woff2" crossorigin>
 
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a  class="page-header__logo" href="index.html" >
+      <a class="page-header__logo" href="index.html">
         <picture class="page-header__pic">
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__hover" src="./img/logo-pink-white-mobile.svg" alt="Pink logo">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.png">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.png">
+          <source media="(min-width: 100px)" srcset="img/logo-pink-white-mobile.png">
+          <img class="page-header__hover" src="./img/logo-pink-white-desktop.png" width="147" height="41"
+            alt="Pink logo">
         </picture>
         <picture class="page-header__pic-hover">
-          <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.svg">
-          <img class="page-header__hover" src="./img/logo-pink-red-mobile.svg" alt="Pink logo">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-red-desktop.png">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-red-tablet.png">
+          <source media="(min-width: 100px)" srcset="img/logo-pink-red-mobile.png">
+          <img class="page-header__hover" src="./img/logo-pink-red-desktop.png" width="147" height="41" alt="Pink logo">
         </picture>
       </a>
       <button class="page-header__close"></button>
@@ -59,8 +63,8 @@
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
             <source media="(min-width: 100px)" srcset="img/panorama-mobile@1x.jpg, img/panorama-mobile@2x.jpg 2x">
-            <img class="wrapper-day__img" src="img/panorama-desktop@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-              alt="Панорама дня">
+            <img class="wrapper-day__img" src="img/panorama-desktop@1x.jpg" srcset="img/panorama-desktop@2x.jpg 2x"
+              width="1200" height="506" alt="Панорама дня">
           </picture>
         </a>
         <span class="wrapper-day__panorama">панорама дня</span>
@@ -89,8 +93,8 @@
                     srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
                   <source media="(min-width: 100px)"
                     srcset="img/photo-car-mobile@1x.jpg, img/photo-car-mobile@2x.jpg 2x">
-
-                  <img src="./img/photo-car-desktop@1x.jpg" srcset="img/photo-car-desktop@2x.jpg 2x" alt="Левон">
+                  <img class="wrapper-guest__img" src="./img/photo-car-desktop@1x.jpg"
+                    srcset="img/photo-car-desktop@2x.jpg 2x" width="300" height="400" alt="Левон">
                 </picture>
               </a>
               <h3 class="wrapper-guest__name">Левон
@@ -113,8 +117,8 @@
                     srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
                   <source media="(min-width: 100px)"
                     srcset="img/photo-drumset-mobile@1x.jpg, img/photo-drumset-mobile@2x.jpg 2x">
-                  <img src="./img/photo-drumset-desktop@1x.jpg" srcset="img/photo-drumset-desktop@2x.jpg 2x"
-                    alt="Антон">
+                  <img class=" wrapper-guest__img" src="./img/photo-drumset-desktop@1x.jpg"
+                    srcset="img/photo-drumset-desktop@2x.jpg 2x" width="300" height="400" alt="Антон">
                 </picture>
               </a>
               <h3 class="wrapper-guest__name">Антон
@@ -137,7 +141,8 @@
                     srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
                   <source media="(min-width: 100px)"
                     srcset="img/photo-window-mobile@1x.jpg, img/photo-window-mobile@2x.jpg 2x">
-                  <img src="./img/photo-window-desktop@1x.jpg" srcset="img/photo-window-desktop@2x.jpg 2x" alt="Борис">
+                  <img class="wrapper-guest__img" src="./img/photo-window-desktop@1x.jpg"
+                    srcset="img/photo-window-desktop@2x.jpg 2x" width="300" height="400" alt="Борис">
                 </picture>
               </a>
               <h3 class="wrapper-guest__name">Борис
@@ -160,7 +165,8 @@
                     srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
                   <source media="(min-width: 100px)"
                     srcset="img/photo-fair-mobile@1x.jpg, img/photo-fair-mobile@2x.jpg 2x">
-                  <img src="./img/photo-fair-desktop@1x.jpg" srcset="img/photo-fair-desktop@2x.jpg 2x" alt="Сергей">
+                  <img class="wrapper-guest__img" src="./img/photo-fair-desktop@1x.jpg"
+                    srcset="img/photo-fair-desktop@2x.jpg 2x" width="300" height="400" alt="Сергей">
                 </picture>
               </a>
               <h3 class="wrapper-guest__name">Сергей
@@ -183,7 +189,8 @@
                     srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
                   <source media="(min-width: 100px)"
                     srcset="img/photo-pov-mobile@1x.jpg, img/photo-pov-mobile@2x.jpg 2x">
-                  <img src="./img/photo-pov-desktop@1x.jpg" srcset="img/photo-pov-desktop@2x.jpg 2x" alt="Максим">
+                  <img class="wrapper-guest__img" src="./img/photo-pov-desktop@1x.jpg"
+                    srcset="img/photo-pov-desktop@2x.jpg 2x" width="300" height="400" alt="Максим">
                 </picture>
               </a>
               <h3 class="wrapper-guest__name">Максим
@@ -206,7 +213,8 @@
                     srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
                   <source media="(min-width: 100px)"
                     srcset="img/photo-wing-mobile@1x.jpg, img/photo-wing-mobile@2x.jpg 2x">
-                  <img src="./img/photo-wing-desktop@1x.jpg" srcset="img/photo-wing-desktop@2x.jpg 2x" alt="Надежда">
+                  <img class="wrapper-guest__img" src="./img/photo-wing-desktop@1x.jpg"
+                    srcset="img/photo-wing-desktop@2x.jpg 2x" width="300" height="400" alt="Надежда">
                 </picture>
               </a>
               <h3 class="wrapper-guest__name">Надежда
@@ -236,13 +244,14 @@
           <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
           <source media="(min-width: 100px)" srcset="img/photo-road-mobile@1x.jpg, img/photo-road-mobile@2x.jpg 2x">
-          <img src="./img/photo-road-desktop@1x.jpg" srcset="img/photo-road-desktop@2x.jpg 2x" alt="Road">
+          <img class="photo-editor__item" src="./img/photo-road-desktop@1x.jpg"
+            srcset="img/photo-road-desktop@2x.jpg 2x" width="300" height="400" alt="Road">
         </picture>
       </div>
       <div class="photo-editor__controls-wrapper">
         <ul class="photo-editor__control-icons">
-          <li class="range-control-icon">
-            <button class="range-control-icon__btn">
+          <li class="photo-editor__range-icon">
+            <button class="photo-editor__range-btn">
               <svg class="range-control-fill" version="1.0" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
                 enable-background="new 0 0 48 48" xml:space="preserve">
@@ -252,9 +261,9 @@
               </svg>
             </button>
           </li>
-          <li class="range-control-icon">
-            <button class="range-control-icon__btn">
-              <svg class="range-fill" version="1.0" xmlns="http://www.w3.org/2000/svg"
+          <li class="photo-editor__range-icon">
+            <button class="photo-editor__range-btn">
+              <svg class="photo-editor__range-fill" version="1.0" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
                 enable-background="new 0 0 48 48" xml:space="preserve">
                 <path fill="none" d="M0,0h48v48H0V0z" />
@@ -264,9 +273,9 @@
               </svg>
             </button>
           </li>
-          <li class="range-control-icon">
-            <button class="range-control-icon__btn">
-              <svg class="range-fill" version="1.0" xmlns="http://www.w3.org/2000/svg"
+          <li class="photo-editor__range-icon">
+            <button class="photo-editor__range-btn">
+              <svg class="photo-editor__range-fill" version="1.0" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92" height="31.92"
                 viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
                 xml:space="preserve">

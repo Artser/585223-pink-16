@@ -1,0 +1,21 @@
+.advantages-white {
+  background-color: white;
+  display: flex;
+}
+
+.advantages-white::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  background-image: url("../img/bg-triangle-white.png");
+  background-color: #2a3747;
+  left: 62px;
+  top: 76px;
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-white {
+    margin: 0;
+    padding: 0;
+  }
+}
